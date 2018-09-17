@@ -1,0 +1,39 @@
+V "GNAT Lib v2018"
+A -x
+A ada
+A -gnatA
+A -gnatc
+P GP FX
+
+RN
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U identity%b		identity.adb		f69c485a OO PK
+
+U identity%s		identity.ads		c081df2d OO PK
+
+D identity.ads		20180917101737 c081df2d identity%s
+D identity.adb		20180917101612 361d9777 identity%b
+D system.ads		20180525052301 4635ec04 system%s
+D /home/colin/Documents/practice_spark/identity_through_swap/swap.adc  20180917101016 00000000
+X 1 identity.ads
+1K9*Identity 10l5 10e13 2|1b14 15l5 15t13
+2U14*Id 2=18 2=21 2|10b14 14l8 14t10
+2i18 X{integer} 3r19 3r24 2|10b18 12m13 13m13
+2i21 Y{integer} 4r19 4r24 2|10b21 12m15 13m15
+7U14 Swap 7=20 7=23 2|2b14 8l8 8t12 12s7 13s7
+7i20 X{integer} 8r19 9r24 2|2b20 6r12 7m7
+7i23 Y{integer} 8r24 9r19 2|2b23 5r12 6m7
+X 2 identity.adb
+3i7 T{integer} 5m7 7r12
+
+QQ SPARKVERSION 2018 (20180524)
+GG EK_DIRECT_CALLS identity__id 1 identity__swap
+GG EK_GLOBALS identity__id local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS identity__swap 0
+GG EK_GLOBALS identity__swap local TRUE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS identity 0
+GG EK_GLOBALS identity local FALSE E_PACKAGE TRUE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 initializes 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_END_MARKER

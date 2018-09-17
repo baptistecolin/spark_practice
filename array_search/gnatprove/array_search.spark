@@ -1,0 +1,211 @@
+{
+  "spark": [
+    {
+      "name": "Array_Search",
+      "sloc": [
+        {
+          "file": "array_search.ads",
+          "line": 1
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Array_Search.Search_Array",
+      "sloc": [
+        {
+          "file": "array_search.ads",
+          "line": 12
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+    {
+      "file": "array_search.ads",
+      "line": 15,
+      "col": 8,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Array_Search.Search_Array",
+        "sloc": [
+          {
+            "file": "array_search.ads",
+            "line": 12
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "array_search__flow__46.trace",
+      "how_proved": "flow"
+    }
+  ],
+  "proof": [
+    {
+      "file": "array_search.adb",
+      "line": 15,
+      "col": 14,
+      "rule": "VC_DISCRIMINANT_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Array_Search.Search_Array",
+        "sloc": [
+          {
+            "file": "array_search.ads",
+            "line": 12
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "array_search.adb",
+      "check_line": 15,
+      "check_col": 14,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 9.99999977648258E-03
+        }
+      }
+    },
+    {
+      "file": "array_search.adb",
+      "line": 10,
+      "col": 20,
+      "rule": "VC_DISCRIMINANT_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Array_Search.Search_Array",
+        "sloc": [
+          {
+            "file": "array_search.ads",
+            "line": 12
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "array_search.adb",
+      "check_line": 10,
+      "check_col": 20,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 9.99999977648258E-03
+        }
+      }
+    }
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Array_Search",
+          "sloc": [
+            {
+              "file": "array_search.ads",
+              "line": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Array_Search.Search_Array",
+          "sloc": [
+            {
+              "file": "array_search.ads",
+              "line": 12
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Array_Search.Search_Array",
+          "sloc": [
+            {
+              "file": "array_search.ads",
+              "line": 12
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "marking": 8.70000003487803E-05,
+    "globals (basic)": 3.79999983124435E-05,
+    "globals/properties (advanced)": 1.20999997307081E-04,
+    "flow analysis": 1.19500001892447E-03,
+    "codepeer results": 3.00000010611257E-06,
+    "init_why_sections": 1.02999998489395E-04,
+    "translation of standard": 1.57500000204891E-03,
+    "translation of compilation unit": 1.39700004365295E-03,
+    "proof": 5.26912987232208E-01
+  }
+}

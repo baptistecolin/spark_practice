@@ -1,0 +1,4 @@
+main.adb:10:04: warning: no Global contract available for "Put_Line"
+main.adb:10:04: warning: assuming "Put_Line" has no effect on global items
+main.adb:12:07: warning: no Global contract available for "Put_Line"
+main.adb:12:07: warning: assuming "Put_Line" has no effect on global items

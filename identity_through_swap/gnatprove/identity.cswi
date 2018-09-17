@@ -1,0 +1,7 @@
+20180917101739
+-c
+-x
+ada
+-gnatA
+-gnatc
+-gnates=/home/colin/Documents/practice_spark/identity_through_swap/gnatprove/3a93fdd2.tmp

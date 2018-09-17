@@ -1,0 +1,21 @@
+[GENERATED OBJECT FILE]
+b__swap.o
+[PROJECT FILES]
+/home/colin/Documents/practice_spark/my_project.gpr
+20180914145212
+[BOUND OBJECT FILES]
+/home/colin/Documents/practice_spark/swap.o
+[GENERATED SOURCE FILES]
+b__swap.ads
+b__swap.adb
+b__swap.ali
+[RESULTING OPTIONS]
+-L/home/colin/Documents/practice_spark/
+-L/home/colin/Documents/practice_spark/
+-L/usr/lib/gcc/x86_64-linux-gnu/7/adalib/
+-shared
+-shared-libgcc
+-lgnat-7
+[RUN PATH OPTION]
+/usr/lib/gcc/x86_64-linux-gnu/7/adalib/
+/usr/lib

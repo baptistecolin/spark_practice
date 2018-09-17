@@ -1,0 +1,275 @@
+{
+  "spark": [
+    {
+      "name": "Main",
+      "sloc": [
+        {
+          "file": "main.adb",
+          "line": 4
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+    {
+      "file": "main.adb",
+      "line": 9,
+      "col": 18,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.adb",
+            "line": 4
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "main__flow__0.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "main.adb",
+      "line": 9,
+      "col": 21,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.adb",
+            "line": 4
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "main__flow__1.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "main.adb",
+      "line": 12,
+      "col": 25,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.adb",
+            "line": 4
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "main__flow__2.trace",
+      "how_proved": "flow"
+    }
+  ],
+  "proof": [
+    {
+      "file": "main.adb",
+      "line": 9,
+      "col": 4,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.adb",
+            "line": 4
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "main.adb",
+      "check_line": 9,
+      "check_col": 4,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 9.99999977648258E-03
+        }
+      }
+    },
+    {
+      "file": "main.adb",
+      "line": 12,
+      "col": 33,
+      "rule": "VC_DISCRIMINANT_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Main",
+        "sloc": [
+          {
+            "file": "main.adb",
+            "line": 4
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "main.adb",
+      "check_line": 12,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 9.99999977648258E-03
+        }
+      }
+    }
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 263
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Array_Search.Search_Array",
+            "sloc": [
+              {
+                "file": "array_search.ads",
+                "line": 12
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Main",
+          "sloc": [
+            {
+              "file": "main.adb",
+              "line": 4
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 263
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Array_Search.Search_Array",
+            "sloc": [
+              {
+                "file": "array_search.ads",
+                "line": 12
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 263
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Array_Search.Search_Array",
+            "sloc": [
+              {
+                "file": "array_search.ads",
+                "line": 12
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Main",
+          "sloc": [
+            {
+              "file": "main.adb",
+              "line": 4
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "marking": 6.92999979946762E-04,
+    "globals (basic)": 9.36999975237995E-04,
+    "globals/properties (advanced)": 2.18799989670515E-03,
+    "flow analysis": 1.04799994733185E-03,
+    "codepeer results": 3.00000010611257E-06,
+    "init_why_sections": 1.00999997812323E-04,
+    "translation of standard": 1.60700001288205E-03,
+    "translation of compilation unit": 1.69830005615950E-02,
+    "proof": 7.87042975425720E-01
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "spark": [
+    {
+      "name": "Swap",
+      "sloc": [
+        {
+          "file": "swap.adb",
+          "line": 3
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Swap.Swap_f",
+      "sloc": [
+        {
+          "file": "swap.adb",
+          "line": 9
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+    {
+      "file": "swap.adb",
+      "line": 19,
+      "col": 9,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Swap.Swap_f",
+        "sloc": [
+          {
+            "file": "swap.adb",
+            "line": 9
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "swap__flow__17.trace",
+      "how_proved": "flow"
+    }
+  ],
+  "proof": [
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Swap",
+          "sloc": [
+            {
+              "file": "swap.adb",
+              "line": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Swap.Swap_f",
+          "sloc": [
+            {
+              "file": "swap.adb",
+              "line": 9
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "marking": 6.67000014800578E-04,
+    "globals (basic)": 8.52999975904822E-04,
+    "globals/properties (advanced)": 2.11600004695356E-03,
+    "flow analysis": 8.08999990113080E-04,
+    "codepeer results": 1.99999999495049E-06,
+    "init_why_sections": 9.99999974737875E-05,
+    "translation of standard": 1.61499995738268E-03,
+    "translation of compilation unit": 1.62240006029606E-02,
+    "proof": 9.99999997475243E-07
+  }
+}

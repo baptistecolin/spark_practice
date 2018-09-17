@@ -1,0 +1,7 @@
+20180917095826
+-c
+-x
+ada
+-gnatA
+-gnatc
+-gnates=/home/colin/Documents/practice_spark/array_search/gnatprove/c6e05bb8.tmp

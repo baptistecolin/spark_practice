@@ -1,0 +1,23 @@
+Summary of SPARK analysis
+=========================
+
+------------------------------------------------------------------------------------------------------
+SPARK Analysis results        Total        Flow   Interval   CodePeer   Provers   Justified   Unproved
+------------------------------------------------------------------------------------------------------
+Data Dependencies                 .           .          .          .         .           .          .
+Flow Dependencies                 .           .          .          .         .           .          .
+Initialization                    1           1          .          .         .           .          .
+Non-Aliasing                      .           .          .          .         .           .          .
+Run-time Checks                   .           .          .          .         .           .          .
+Assertions                        .           .          .          .         .           .          .
+Functional Contracts              .           .          .          .         .           .          .
+LSP Verification                  .           .          .          .         .           .          .
+------------------------------------------------------------------------------------------------------
+Total                             1    1 (100%)          .          .         .           .          .
+
+
+Analyzed 1 unit
+in unit identity, 3 subprograms and packages out of 3 analyzed
+  Identity at identity.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Identity.Id at identity.ads:2 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Identity.Swap at identity.ads:7 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)

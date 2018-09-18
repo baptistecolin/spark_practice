@@ -1,0 +1,67 @@
+V "GNAT Lib v2018"
+A -x
+A ada
+A -gnatA
+A -gnatc
+P GP FX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U sorting%b		sorting.adb		981e87fd OO PK
+
+U sorting%s		sorting.ads		cc38b9dc OO PK
+
+D sorting.ads		20180918143325 cc38b9dc sorting%s
+D sorting.adb		20180918160020 54263e21 sorting%b
+D system.ads		20180525052301 4635ec04 system%s
+D /home/colin/Documents/practice_spark/sort/spark_mode.adc  20180918120842 00000000
+X 1 sorting.ads
+1K9*Sorting 29l5 29e12 2|1b14 50l5 50t12
+2A9*Nat_Array(integer)<integer> 4r31 10r12 21r19 2|4r19 14r12 33r25 39r31
+4U14*Sort 4=20 2|39b14 48l8 48t12
+4a20 T{2A9} 5r29 5r44 5r59 5r68 2|39b20 42r21 43r28 43r31 43r40 44m16 44r19
+. 46r40 46r43 46r53
+5i24 I{integer} 5r40 5r62 5r71
+9V13 Max{positive} 10>8 11>8 12>8 16r42 17r15 18r15 2|13b13 31l8 31t11 43s23
+10a8 T{2A9} 13r20 13r37 14r20 14r37 16r39 16r57 2|14b8 24r51 24r62 26r13
+. 26r21
+11i8 I{positive} 13r15 13r32 15r17 16r29 17r29 2|15b8 20r24
+12i8 J{positive} 14r15 14r32 15r15 16r34 18r29 2|16b8 18r25 20r29 24r34 24r85
+16i24 K{integer} 16r59
+20U14 Swap 21=8 22>8 23>8 2|3b14 11l9 11t13 44s10
+21a8 T{2A9} 24r20 24r37 25r29 26r21 26r29 27r21 27r29 28r33 28r41 2|4b8 7r24
+. 9m7 9r15 10m7
+22i8 I{positive} 24r15 26r15 27r36 28r16 2|5b8 7r27 9r9
+23i8 J{positive} 24r32 26r36 27r15 28r27 2|6b8 9r17 10r9
+25i24 K{integer} 26r11 26r24 27r11 27r24 28r11 28r22 28r36 28r48
+X 2 sorting.adb
+7i7 Tmp{integer} 10r15
+18i7 Tmp{positive} 24r54 24r73 26r24 27m13 30r14
+20i11 K{integer} 24r29 24r41 24r80 26r16 27r20
+24i24 L{integer} 24r39 24r64
+33V13 Sorted{boolean} 33>21 33>36 33>39 46s33
+33a21 T{1|2A9} 34r33 34r41 37r38 37r55
+33i36 I{positive} 34r21 37r23 37r33
+33i39 J{positive} 34r26 36r14 37r26 37r50
+34i16 K{integer} 34r35 34r43
+40i7 Local_Max{positive} 43m10 44r29
+42i11 K{integer} 43r47 44r26 46r50
+
+QQ SPARKVERSION 2018 (20180524)
+GG EK_DIRECT_CALLS sorting__sort 3 sorting__sorted sorting__max sorting__swap
+GG EK_GLOBALS sorting__sort local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS sorting__max 0
+GG EK_GLOBALS sorting__max local TRUE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS sorting__swap 0
+GG EK_GLOBALS sorting__swap local TRUE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS sorting__sorted 0
+GG EK_GLOBALS sorting__sorted local TRUE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS sorting 0
+GG EK_GLOBALS sorting local FALSE E_PACKAGE TRUE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 initializes 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_END_MARKER

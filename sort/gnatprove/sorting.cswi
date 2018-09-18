@@ -1,0 +1,7 @@
+20180918160024
+-c
+-x
+ada
+-gnatA
+-gnatc
+-gnates=/home/colin/Documents/practice_spark/sort/gnatprove/8299d7e1.tmp

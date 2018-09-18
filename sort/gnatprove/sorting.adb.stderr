@@ -1,0 +1,1 @@
+sorting.adb:46:33: medium: loop invariant might fail after first iteration, cannot prove Sorted(T, T'Last-K, T'last) (e.g. when K = 0 and T'First = 0 and T'Last = 0)

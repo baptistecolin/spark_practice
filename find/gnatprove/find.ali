@@ -11,22 +11,25 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U find%b		find.adb		f74ab8d9 OO PK
+U find%b		find.adb		18ed1d7c OO PK
 
-U find%s		find.ads		3e0147bc OO PK
+U find%s		find.ads		c64066d0 OO PK
 
-D find.ads		20180918084548 3e0147bc find%s
-D find.adb		20180918084453 c94bff65 find%b
+D find.ads		20180918085312 c64066d0 find%s
+D find.adb		20180918102708 dead7bac find%b
 D system.ads		20180525052301 4635ec04 system%s
 D /home/colin/Documents/practice_spark/find/spark_mode.adc  20180918084009 00000000
 X 1 find.ads
-1K9*Find 6l5 6e9 2|1b14 13l5 13t9
+1K9*Find 10l5 10e9 2|1b14 16l5 16t9
 2A9*Nat_Array(natural)<integer> 4r25 2|3r25
-4V13*Find_f{natural} 4>21 4>36 5r15 2|3b13 11l8 11t14
-4a21 A{2A9} 5r36 2|3b21 5r16 6r13
-4i36 E{natural} 2|3b36 6r21
+4V13*Find_f{natural} 4>21 4>36 7r18 8r16 8r53 2|3b13 14l8 14t14
+4a21 A{2A9} 6r28 6r39 8r33 8r50 2|3b21 5r16 7r27 7r45 8r13 12r35 12r46
+4i36 E{natural} 6r48 8r70 2|3b36 7r54 8r21 12r54
+6i23 I{integer} 6r42
 X 2 find.adb
-5i11 I{integer} 6r16 7r20
+5i11 I{integer} 7r38 8r16 9r20
+7i22 J{integer} 7r48
+12i30 J{integer} 12r48
 
 QQ SPARKVERSION 2018 (20180524)
 GG EK_DIRECT_CALLS find__find_f 0

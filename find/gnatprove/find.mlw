@@ -1797,7 +1797,7 @@ module Find__find_f__a
  use import "_gnatprove_standard".Main
  use        Find__nat_array
 
- function a #"find.ads" 4 0 0#"model_projected" "model_trace:2405" "name:A" 
+ function a #"find.ads" 4 0 0#"model_projected" "model_trace:2448" "name:A" 
    : Find__nat_array.nat_array
  
  function attr__ATTRIBUTE_ADDRESS 
@@ -1816,7 +1816,7 @@ end
 module Find__find_f__e
  use import "_gnatprove_standard".Main
 
- function e #"find.ads" 4 0 0#"model" "model_trace:2414" "name:E" 
+ function e #"find.ads" 4 0 0#"model" "model_trace:2457" "name:E" 
    : int
  
  function attr__ATTRIBUTE_ADDRESS 
@@ -1828,6 +1828,44 @@ end
 module Find__find_f__e___axiom
  use import "_gnatprove_standard".Main
 
+
+end
+
+(* Module for axiomatizing type "T5s" defined at find.ads:6, created in Gnat2Why.Types.Translate_Type *)
+module Find__find_f__L4s__T5s
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer
+ use        Standard__integer__rep
+
+ type t5s =
+  Standard__integer.integer
+ 
+ predicate dynamic_property 
+   (first_int : int) (last_int : int) (x : int)  =
+  ( (first_int <= x) /\ (x <= last_int) )
+ 
+ clone export "ada__model".Dynamic_Discrete with
+ type t = t5s, 
+ type rep_type = int, 
+ function base_to_rep = Standard__integer__rep.to_rep, 
+ function base_of_rep = Standard__integer__rep.of_rep, 
+ predicate dynamic_property = dynamic_property
+ 
+ type t5s__ref =
+  { mutable t5s__content "model_trace:" "name:" : t5s }
+ 
+ function t5s__ref___projection 
+   (a : t5s__ref) : t5s =
+  a.t5s__content
+ 
+ meta "model_projection" function t5s__ref___projection
+ 
+ meta "inline : no" function t5s__ref___projection
+ 
+ val t5s__havoc 
+   (x : t5s__ref) : unit
+  writes {x}
 
 end
 
@@ -1976,6 +2014,120 @@ module Find__find_f__L_1__T2b
  
  val t2b__havoc 
    (x : t2b__ref) : unit
+  writes {x}
+
+end
+
+(* Module for axiomatizing type "T6b" defined at find.adb:7, created in Gnat2Why.Types.Translate_Type *)
+module Find__find_f__L_1__L5b__T6b
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer
+ use        Standard__integer__rep
+
+ type t6b =
+  Standard__integer.integer
+ 
+ predicate dynamic_property 
+   (first_int : int) (last_int : int) (x : int)  =
+  ( (first_int <= x) /\ (x <= last_int) )
+ 
+ clone export "ada__model".Dynamic_Discrete with
+ type t = t6b, 
+ type rep_type = int, 
+ function base_to_rep = Standard__integer__rep.to_rep, 
+ function base_of_rep = Standard__integer__rep.of_rep, 
+ predicate dynamic_property = dynamic_property
+ 
+ type t6b__ref =
+  { mutable t6b__content "model_trace:" "name:" : t6b }
+ 
+ function t6b__ref___projection 
+   (a : t6b__ref) : t6b =
+  a.t6b__content
+ 
+ meta "model_projection" function t6b__ref___projection
+ 
+ meta "inline : no" function t6b__ref___projection
+ 
+ val t6b__havoc 
+   (x : t6b__ref) : unit
+  writes {x}
+
+end
+
+(* Module for axiomatizing type "T4b" defined at find.adb:7, created in Gnat2Why.Types.Translate_Type *)
+module Find__find_f__L_1__L3b__T4b
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer
+ use        Standard__integer__rep
+
+ type t4b =
+  Standard__integer.integer
+ 
+ predicate dynamic_property 
+   (first_int : int) (last_int : int) (x : int)  =
+  ( (first_int <= x) /\ (x <= last_int) )
+ 
+ clone export "ada__model".Dynamic_Discrete with
+ type t = t4b, 
+ type rep_type = int, 
+ function base_to_rep = Standard__integer__rep.to_rep, 
+ function base_of_rep = Standard__integer__rep.of_rep, 
+ predicate dynamic_property = dynamic_property
+ 
+ type t4b__ref =
+  { mutable t4b__content "model_trace:" "name:" : t4b }
+ 
+ function t4b__ref___projection 
+   (a : t4b__ref) : t4b =
+  a.t4b__content
+ 
+ meta "model_projection" function t4b__ref___projection
+ 
+ meta "inline : no" function t4b__ref___projection
+ 
+ val t4b__havoc 
+   (x : t4b__ref) : unit
+  writes {x}
+
+end
+
+(* Module for axiomatizing type "T9b" defined at find.adb:12, created in Gnat2Why.Types.Translate_Type *)
+module Find__find_f__L8b__T9b
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer
+ use        Standard__integer__rep
+
+ type t9b =
+  Standard__integer.integer
+ 
+ predicate dynamic_property 
+   (first_int : int) (last_int : int) (x : int)  =
+  ( (first_int <= x) /\ (x <= last_int) )
+ 
+ clone export "ada__model".Dynamic_Discrete with
+ type t = t9b, 
+ type rep_type = int, 
+ function base_to_rep = Standard__integer__rep.to_rep, 
+ function base_of_rep = Standard__integer__rep.of_rep, 
+ predicate dynamic_property = dynamic_property
+ 
+ type t9b__ref =
+  { mutable t9b__content "model_trace:" "name:" : t9b }
+ 
+ function t9b__ref___projection 
+   (a : t9b__ref) : t9b =
+  a.t9b__content
+ 
+ meta "model_projection" function t9b__ref___projection
+ 
+ meta "inline : no" function t9b__ref___projection
+ 
+ val t9b__havoc 
+   (x : t9b__ref) : unit
   writes {x}
 
 end
@@ -2388,6 +2540,13 @@ module Find__nat_array___axiom
 
 end
 
+(* Module giving axioms for type "T5s" defined at find.ads:6, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Find__find_f__L4s__T5s___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
 (* Module giving axioms for type "TS1bP1" defined at find.adb:3, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Find__find_f__TS1bP1___axiom
  use import "_gnatprove_standard".Main
@@ -2420,26 +2579,60 @@ module Find__find_f__L_1__T2b___axiom
 
 
 end
+
+(* Module giving axioms for type "T6b" defined at find.adb:7, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Find__find_f__L_1__L5b__T6b___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module giving axioms for type "T4b" defined at find.adb:7, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Find__find_f__L_1__L3b__T4b___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module giving axioms for type "T9b" defined at find.adb:12, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Find__find_f__L8b__T9b___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
 (* Module for declaring a program function (and possibly an axiom) for "find_f" defined at find.ads:4, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
 module Find__find_f___axiom
  use import "_gnatprove_standard".Main
  use import "int".Int
+ use        Standard__natural
  use        Standard__natural___axiom
+ use        Standard__natural__rep
  use        Find__find_f
+ use        Array__Int__Standard__natural
  use        Find__nat_array
  use        Find__nat_array___axiom
+ use        Array__Int__Standard__natural
+ use        Array__Int__Standard__natural
+ use        Array__Int__Standard__natural
+ use        Array__Int__Standard__natural
 
  val find_f 
    (a : Find__nat_array.nat_array) (e : int) : int
   requires {  true }
-  ensures {  ( ( (result = (Find__find_f.find_f a e)) /\ (Find__find_f.find_f__function_guard result a e) ) /\ ( (Standard__natural___axiom.dynamic_invariant result True False True True) /\ ( (result = 0) \/ ( ((Find__nat_array.first a) <= result) /\ (result <= (Find__nat_array.last a)) ) ) ) ) }
+  ensures {  ( ( (result = (Find__find_f.find_f a e)) /\ (Find__find_f.find_f__function_guard result a e) ) /\ ( (Standard__natural___axiom.dynamic_invariant result True False True True) /\ (if ((forall i   "model" "name:I" "model_trace:2474"  : int.
+   ( ( ((Find__nat_array.first a) <= i) /\ (i <= (Find__nat_array.last a)) ) -> ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get (Find__nat_array.to_array a) i)) <> e) ))) then (
+   (result = 0)) else (
+   ( ( ((Find__nat_array.first a) <= result) /\ (result <= (Find__nat_array.last a)) ) /\ ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get (Find__nat_array.to_array a) result)) = e) ))) ) ) }
  
  axiom find_f__post_axiom :
   (forall a   : Find__nat_array.nat_array.
   (forall e   : int [(Find__find_f.find_f a e)].
    ( ( (Find__nat_array___axiom.dynamic_invariant a True True True True) /\ (Standard__natural___axiom.dynamic_invariant e True True True True) ) -> (let result = (Find__find_f.find_f a e) in (
     (if ((Find__find_f.find_f__function_guard result a e)) then (
-     ( ( ( (result = 0) \/ ( ((Find__nat_array.first a) <= result) /\ (result <= (Find__nat_array.last a)) ) ) /\ (Standard__natural___axiom.dynamic_invariant result True False True True) ) /\ true )) else true)))
+     ( ( (if ((forall i   "model" "name:I" "model_trace:2474"  : int.
+      ( ( ((Find__nat_array.first a) <= i) /\ (i <= (Find__nat_array.last a)) ) -> ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get (Find__nat_array.to_array a) i)) <> e) ))) then (
+      (result = 0)) else (
+      ( ( ((Find__nat_array.first a) <= result) /\ (result <= (Find__nat_array.last a)) ) /\ ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get (Find__nat_array.to_array a) result)) = e) ))) /\ (Standard__natural___axiom.dynamic_invariant result True False True True) ) /\ true )) else true)))
     )))
 
 end
@@ -2459,7 +2652,7 @@ module Find__package_def
   (#"find.ads" 5 0 0# ());
   (#"find.ads" 5 0 0# ());
   (#"find.adb" 3 0 0# ());
-  ( "GP_Sloc:find.adb:13:1" (#"find.adb" 13 0 0# ()) ) )
+  ( "GP_Sloc:find.adb:16:1" (#"find.adb" 16 0 0# ()) ) )
 end
 
 (* Module for checking contracts and absence of run-time errors in subprogram "find_f" defined at find.ads:4, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
@@ -2467,6 +2660,7 @@ module Find__find_f__subprogram_def
  use import "_gnatprove_standard".Main
  use import "int".Int
  use        "_gnatprove_standard".Boolean
+ use        Standard__integer
  use        Standard__natural
  use        Standard__natural___axiom
  use        Standard__natural__rep
@@ -2476,7 +2670,19 @@ module Find__find_f__subprogram_def
  use        Find__find_f__a
  use        Find__find_f__e
  use        Find__find_f__L_1
+ use        Find__find_f__L_1__T2b
  use        Find__find_f__L_1__i
+ use        Array__Int__Standard__natural
+ use        Array__Int__Standard__natural
+ use        Array__Int__Standard__natural
+ use        Array__Int__Standard__natural
+ use        Array__Int__Standard__natural
+ use        Array__Int__Standard__natural
+ use        Array__Int__Standard__natural
+ use        Array__Int__Standard__natural
+ use        Array__Int__Standard__natural
+ use        Array__Int__Standard__natural
+ use        Array__Int__Standard__natural
  use        Array__Int__Standard__natural
  use        Standard__natural___axiom
  use        Standard__positive___axiom
@@ -2486,14 +2692,18 @@ module Find__find_f__subprogram_def
  use        Find__nat_array___axiom
  use        Find__find_f__a___axiom
  use        Find__find_f__e___axiom
+ use        Find__find_f__L_1__T2b___axiom
 
- val find__find_f__result "model_projected" "model_trace:2398@result" "name:Find_f"  : int__ref 
+ val find__find_f__result "model_projected" "model_trace:2441@result" "name:Find_f"  : int__ref 
  
  let def #"find.ads" 4 0 0#"W:diverges:N" "GP_Subp:find.ads:4" 
    (__void_param : unit)
   requires { #"find.ads" 4 0 0# true }
-  ensures { #"find.ads" 4 0 0# (#"find.ads" 5 0 0# ( "model_vc_post" "keep_on_simp" "GP_Sloc:find.ads:5:15" "GP_Reason:VC_POSTCONDITION" "GP_Id:1" "comment:      Post => Find_f'Result in 0 | A'Range;
-              ^ find.ads:5:15:VC_POSTCONDITION" "GP_Shape:pragargs__in" ( "GP_Pretty_Ada:2468" "GP_Sloc:find.ads:5:15" ( (find__find_f__result.int__content = 0) \/ ( ((Find__nat_array.first Find__find_f__a.a) <= find__find_f__result.int__content) /\ (find__find_f__result.int__content <= (Find__nat_array.last Find__find_f__a.a)) ) ) ) )) }
+  ensures { #"find.ads" 4 0 0# (#"find.ads" 6 0 0# ( "model_vc_post" "keep_on_simp" "GP_Sloc:find.ads:6:10" "GP_Reason:VC_POSTCONDITION" "GP_Id:8" "comment:         (if (for all I in A'Range => A (I) /= E)
+         ^ find.ads:6:10:VC_POSTCONDITION" "GP_Shape:pragargs__if" (if ((forall i #"find.ads" 6 0 0#  "model" "name:I" "model_trace:2474"  : int.
+   ( ( ((Find__nat_array.first Find__find_f__a.a) <= i) /\ (i <= (Find__nat_array.last Find__find_f__a.a)) ) -> ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get (Find__nat_array.to_array Find__find_f__a.a) i)) <> Find__find_f__e.e) ))) then (
+   ( "GP_Pretty_Ada:2493" "GP_Sloc:find.ads:7:18" (find__find_f__result.int__content = 0) )) else (
+   ( ( "GP_Pretty_Ada:2498" "GP_Sloc:find.ads:8:16" ( ((Find__nat_array.first Find__find_f__a.a) <= find__find_f__result.int__content) /\ (find__find_f__result.int__content <= (Find__nat_array.last Find__find_f__a.a)) ) ) /\ ( "GP_Pretty_Ada:2507" "GP_Sloc:find.ads:8:50" ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get (Find__nat_array.to_array Find__find_f__a.a) find__find_f__result.int__content)) = Find__find_f__e.e) ) ))) )) }
    =
   ( () (* Assume dynamic invariants of inputs of the subprogram find.ads:4 *)
   ;
@@ -2526,47 +2736,128 @@ module Find__find_f__subprogram_def
     ;
     (if ((Boolean.andb((temp___173 <= Find__find_f__L_1__i.i.int__content)) ((Find__find_f__L_1__i.i.int__content <= temp___174)))) then (
      #"find.adb" 5 0 0# try
-      ( () (* First unroling of the loop statements appearing before the loop invariant of loop find.adb:5 *)
-      ;
-      () (* While loop translating the Ada loop from find.adb:5 *)
-      ;
-      #"find.adb" 5 0 0# while True do
-       ( () (* Assume implicit invariants from the loop find.adb:5 *)
+      ( #"find.adb" 5 0 0# abstract ensures {true}(let _ = Find__find_f__L_1__i.i.int__content in (
+       ()))
+       end ;
+      (let temp___175 = #"find.adb" 5 0 0# (any int
+      ensures {#"find.adb" 5 0 0# (result = Find__find_f__L_1__i.i.int__content)} 
+      ) in (
+       ( () (* First unroling of the loop statements appearing before the loop invariant of loop find.adb:5 *)
        ;
-       #"find.adb" 5 0 0# assume { #"find.adb" 5 0 0# ( ((Find__nat_array.first Find__find_f__a.a) <= Find__find_f__L_1__i.i.int__content) /\ (Find__find_f__L_1__i.i.int__content <= (Find__nat_array.last Find__find_f__a.a)) ) };
-       () (* Check for absence of RTE in the invariant of loop find.adb:5 *)
+       () (* While loop translating the Ada loop from find.adb:5 *)
        ;
-       () (* Loop statements appearing after the loop invariant of loop find.adb:5 *)
-       ;
-       ( "GP_Sloc:find.adb:6:10" (#"find.adb" 6 0 0# (if (((Standard__natural__rep.to_rep((Array__Int__Standard__natural.get((Find__nat_array.to_array(Find__find_f__a.a))) (Find__find_f__L_1__i.i.int__content)))) = Find__find_f__e.e)) then (
-        ( "GP_Sloc:find.adb:7:13" (#"find.adb" 7 0 0# ( #"find.adb" 7 0 0# find__find_f__result.int__content <- ( (#"find.adb" 7 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:find.adb:7:20" "GP_Reason:VC_RANGE_CHECK" "GP_Id:0" "comment:            return I;
-                   ^ find.adb:7:20:VC_RANGE_CHECK" "GP_Shape:L_1_while__if__return" (Standard__natural.range_check_(Find__find_f__L_1__i.i.int__content)) )) );
-         raise Return__exc )) )) else (
-        ()))) );
-       () (* Check for the exit condition and loop statements appearing before the loop invariant of loop find.adb:5 *)
-       ;
-       (if ((Find__find_f__L_1__i.i.int__content = temp___174)) then (
-         raise Find__find_f__L_1.L_1));
-        Find__find_f__L_1__i.i.int__content <- ( (Find__find_f__L_1__i.i.int__content + 1) ) )
-      done )
+       #"find.adb" 5 0 0# while True do
+        invariant { 
+         (#"find.adb" 7 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:find.adb:7:14" "GP_Reason:VC_LOOP_INVARIANT" "GP_Id:3" "comment:            (for all J in A'First .. I-1 => A (J) /= E);
+             ^ find.adb:7:14:VC_LOOP_INVARIANT" "GP_Shape:L_1_while__pragargs__forall" (forall j #"find.adb" 7 0 0#  "model" "model_trace:2353" "name:J"  : int.
+          ( ( ((Find__nat_array.first Find__find_f__a.a) <= j) /\ (j <= (Find__find_f__L_1__i.i.int__content - 1)) ) -> ( "GP_Pretty_Ada:2372" "GP_Sloc:find.adb:7:45" ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get (Find__nat_array.to_array Find__find_f__a.a) j)) <> Find__find_f__e.e) ) )) ))
+         }
+        ( () (* Assume implicit invariants from the loop find.adb:5 *)
+        ;
+         assume {  (Boolean.andb(( ( true /\ (if (((Find__nat_array.first Find__find_f__a.a) <= (Find__nat_array.last Find__find_f__a.a))) then (
+         (Find__find_f__L_1__T2b.dynamic_property (Find__nat_array.first Find__find_f__a.a) (Find__nat_array.last Find__find_f__a.a) Find__find_f__L_1__i.i.int__content)) else true) ) /\ true )) (( ((Find__nat_array.first Find__find_f__a.a) <= Find__find_f__L_1__i.i.int__content) /\ (Find__find_f__L_1__i.i.int__content <= (Find__nat_array.last Find__find_f__a.a)) ))) };
+        () (* Check for absence of RTE in the invariant of loop find.adb:5 *)
+        ;
+         abstract ensures {true}(let _ = ( (let j =  (any int
+        ) in (
+         (if ((Boolean.andb(((  abstract ensures {true}(let _ = Find__find_f__a.a in (
+          ()))
+          end ;
+         (Find__nat_array.first(Find__find_f__a.a)) ) <= j)) ((j <= (#"find.adb" 7 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:find.adb:7:39" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Id:1" "comment:            (for all J in A'First .. I-1 => A (J) /= E);
+                                      ^ find.adb:7:39:VC_OVERFLOW_CHECK" "GP_Shape:L_1_while__pragargs__forall__range__sub" (Standard__integer.range_check_((Find__find_f__L_1__i.i.int__content - 1))) )))))) then (
+           abstract ensures {true}(let _ = ((Standard__natural__rep.to_rep((Array__Int__Standard__natural.get((Find__nat_array.to_array(Find__find_f__a.a))) ((  assert {  (#"find.adb" 7 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:find.adb:7:48" "GP_Reason:VC_INDEX_CHECK" "GP_Id:2" "comment:            (for all J in A'First .. I-1 => A (J) /= E);
+                                               ^ find.adb:7:48:VC_INDEX_CHECK" "GP_Shape:L_1_while__pragargs__forall__cmp__ixdcomp" ( ((Find__nat_array.first Find__find_f__a.a) <= j) /\ (j <= (Find__nat_array.last Find__find_f__a.a)) ) )) };
+          j ))))) <> Find__find_f__e.e) in (
+           ()))
+           end ))))
+        ;
+         (any bool
+        requires { true} 
+        ensures { ( (result = True) <-> (forall j   "model" "model_trace:2353" "name:J"  : int.
+         ( ( ((Find__nat_array.first Find__find_f__a.a) <= j) /\ (j <= (Find__find_f__L_1__i.i.int__content - 1)) ) -> ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get (Find__nat_array.to_array Find__find_f__a.a) j)) <> Find__find_f__e.e) )) )} 
+        ) ) in (
+         ()))
+         end ;
+        () (* Loop statements appearing after the loop invariant of loop find.adb:5 *)
+        ;
+        ( "GP_Sloc:find.adb:8:10" (#"find.adb" 8 0 0# (if (((Standard__natural__rep.to_rep((Array__Int__Standard__natural.get((Find__nat_array.to_array(Find__find_f__a.a))) (Find__find_f__L_1__i.i.int__content)))) = Find__find_f__e.e)) then (
+         ( "GP_Sloc:find.adb:9:13" (#"find.adb" 9 0 0# ( #"find.adb" 9 0 0# find__find_f__result.int__content <- ( (#"find.adb" 9 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:find.adb:9:20" "GP_Reason:VC_RANGE_CHECK" "GP_Id:0" "comment:            return I;
+                   ^ find.adb:9:20:VC_RANGE_CHECK" "GP_Shape:L_1_while__if__return" (Standard__natural.range_check_(Find__find_f__L_1__i.i.int__content)) )) );
+          raise Return__exc )) )) else (
+         ()))) );
+        () (* Check for the exit condition and loop statements appearing before the loop invariant of loop find.adb:5 *)
+        ;
+        (if ((Find__find_f__L_1__i.i.int__content = temp___174)) then (
+          raise Find__find_f__L_1.L_1));
+         Find__find_f__L_1__i.i.int__content <- ( (Find__find_f__L_1__i.i.int__content + 1) ) )
+       done )))
+       )
      with
       Find__find_f__L_1.L_1 -> ()
      end)) )))
    ))
    ) );
-   ( "GP_Sloc:find.adb:10:7" (#"find.adb" 10 0 0# ( #"find.adb" 10 0 0# find__find_f__result.int__content <- ( 0 );
-   #"find.adb" 10 0 0# raise Return__exc )) );
+   ( "GP_Sloc:find.adb:12:7" (#"find.adb" 12 0 0# ( #"find.adb" 12 0 0# abstract ensures {true}(let _ = ( (let j = #"find.adb" 12 0 0# (any int
+   ) in (
+    (if ((Boolean.andb((( #"find.adb" 12 0 0# abstract ensures {true}(let _ = Find__find_f__a.a in (
+     ()))
+     end ;
+    (Find__nat_array.first(Find__find_f__a.a)) ) <= j)) ((j <= ( #"find.adb" 12 0 0# abstract ensures {true}(let _ = Find__find_f__a.a in (
+     ()))
+     end ;
+    (Find__nat_array.last(Find__find_f__a.a)) ))))) then (
+     #"find.adb" 12 0 0# abstract ensures {true}(let _ = ((Standard__natural__rep.to_rep((Array__Int__Standard__natural.get((Find__nat_array.to_array(Find__find_f__a.a))) (( #"find.adb" 12 0 0# assert { #"find.adb" 12 0 0# (#"find.adb" 12 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:find.adb:12:48" "GP_Id:4" "comment:      pragma assert (for all J in A'Range => A(J) /= E);
+                                               ^ find.adb:12:48:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__cmp__ixdcomp" ( ((Find__nat_array.first Find__find_f__a.a) <= j) /\ (j <= (Find__nat_array.last Find__find_f__a.a)) ) )) };
+     j ))))) <> Find__find_f__e.e) in (
+      ()))
+      end ))))
+   ;
+    (any bool
+   requires { true} 
+   ensures { ( (result = True) <-> (forall j   "model" "name:J" "model_trace:2386"  : int.
+    ( ( ((Find__nat_array.first Find__find_f__a.a) <= j) /\ (j <= (Find__nat_array.last Find__find_f__a.a)) ) -> ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get (Find__nat_array.to_array Find__find_f__a.a) j)) <> Find__find_f__e.e) )) )} 
+   ) ) in (
+    ()))
+    end ;
+    assert {  (#"find.adb" 12 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:find.adb:12:22" "GP_Reason:VC_ASSERT" "GP_Id:5" "comment:      pragma assert (for all J in A'Range => A(J) /= E);
+                     ^ find.adb:12:22:VC_ASSERT" "GP_Shape:pragargs__forall" (forall j #"find.adb" 12 0 0#  "model" "name:J" "model_trace:2386"  : int.
+    ( ( ((Find__nat_array.first Find__find_f__a.a) <= j) /\ (j <= (Find__nat_array.last Find__find_f__a.a)) ) -> ( "GP_Pretty_Ada:2400" "GP_Sloc:find.adb:12:46" ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get (Find__nat_array.to_array Find__find_f__a.a) j)) <> Find__find_f__e.e) ) )) )) } )) );
+   ( "GP_Sloc:find.adb:13:7" (#"find.adb" 13 0 0# ( #"find.adb" 13 0 0# find__find_f__result.int__content <- ( 0 );
+   #"find.adb" 13 0 0# raise Return__exc )) );
     raise Return__exc )
   with
    Return__exc -> ()
   end;
-   abstract ensures {true}(let _ = ( (find__find_f__result.int__content = 0) || (Boolean.andb(((  abstract ensures {true}(let _ = Find__find_f__a.a in (
-   ()))
-   end ;
-  (Find__nat_array.first(Find__find_f__a.a)) ) <= find__find_f__result.int__content)) ((find__find_f__result.int__content <= (  abstract ensures {true}(let _ = Find__find_f__a.a in (
-   ()))
-   end ;
-  (Find__nat_array.last(Find__find_f__a.a)) )))) ) in (
+   abstract ensures {true}(let _ = (if (( (let i =  (any int
+  ) in (
+   (if ((Boolean.andb(((  abstract ensures {true}(let _ = Find__find_f__a.a in (
+    ()))
+    end ;
+   (Find__nat_array.first(Find__find_f__a.a)) ) <= i)) ((i <= (  abstract ensures {true}(let _ = Find__find_f__a.a in (
+    ()))
+    end ;
+   (Find__nat_array.last(Find__find_f__a.a)) ))))) then (
+     abstract ensures {true}(let _ = ((Standard__natural__rep.to_rep((Array__Int__Standard__natural.get((Find__nat_array.to_array(Find__find_f__a.a))) ((  assert {  (#"find.ads" 6 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:find.ads:6:42" "GP_Id:7" "comment:         (if (for all I in A'Range => A (I) /= E)
+                                         ^ find.ads:6:42:VC_INDEX_CHECK" "GP_Shape:pragargs__if__forall__cmp__ixdcomp" ( ((Find__nat_array.first Find__find_f__a.a) <= i) /\ (i <= (Find__nat_array.last Find__find_f__a.a)) ) )) };
+    i ))))) <> Find__find_f__e.e) in (
+     ()))
+     end ))))
+  ;
+   (any bool
+  requires { true} 
+  ensures { ( (result = True) <-> (forall i   "model" "name:I" "model_trace:2474"  : int.
+   ( ( ((Find__nat_array.first Find__find_f__a.a) <= i) /\ (i <= (Find__nat_array.last Find__find_f__a.a)) ) -> ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get (Find__nat_array.to_array Find__find_f__a.a) i)) <> Find__find_f__e.e) )) )} 
+  ) )) then (
+   (find__find_f__result.int__content = 0)) else (
+   ( (Boolean.andb(((  abstract ensures {true}(let _ = Find__find_f__a.a in (
+    ()))
+    end ;
+   (Find__nat_array.first(Find__find_f__a.a)) ) <= find__find_f__result.int__content)) ((find__find_f__result.int__content <= (  abstract ensures {true}(let _ = Find__find_f__a.a in (
+    ()))
+    end ;
+   (Find__nat_array.last(Find__find_f__a.a)) )))) && ((Standard__natural__rep.to_rep((Array__Int__Standard__natural.get((Find__nat_array.to_array(Find__find_f__a.a))) ((  assert {  (#"find.ads" 8 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:find.ads:8:59" "GP_Id:6" "comment:          else Find_f'Result in A'Range and then A (Find_f'Result) = E);
+                                                          ^ find.ads:8:59:VC_INDEX_CHECK" "GP_Shape:pragargs__if__andthen__cmp__ixdcomp__result_ref" ( ((Find__nat_array.first Find__find_f__a.a) <= find__find_f__result.int__content) /\ (find__find_f__result.int__content <= (Find__nat_array.last Find__find_f__a.a)) ) )) };
+   find__find_f__result.int__content ))))) = Find__find_f__e.e) ))) in (
    ()))
    end ;
   find__find_f__result.int__content )

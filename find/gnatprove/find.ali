@@ -1,0 +1,36 @@
+V "GNAT Lib v2018"
+A -x
+A ada
+A -gnatA
+A -gnatc
+P GP FX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U find%b		find.adb		f74ab8d9 OO PK
+
+U find%s		find.ads		3e0147bc OO PK
+
+D find.ads		20180918084548 3e0147bc find%s
+D find.adb		20180918084453 c94bff65 find%b
+D system.ads		20180525052301 4635ec04 system%s
+D /home/colin/Documents/practice_spark/find/spark_mode.adc  20180918084009 00000000
+X 1 find.ads
+1K9*Find 6l5 6e9 2|1b14 13l5 13t9
+2A9*Nat_Array(natural)<integer> 4r25 2|3r25
+4V13*Find_f{natural} 4>21 4>36 5r15 2|3b13 11l8 11t14
+4a21 A{2A9} 5r36 2|3b21 5r16 6r13
+4i36 E{natural} 2|3b36 6r21
+X 2 find.adb
+5i11 I{integer} 6r16 7r20
+
+QQ SPARKVERSION 2018 (20180524)
+GG EK_DIRECT_CALLS find__find_f 0
+GG EK_GLOBALS find__find_f local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS find 0
+GG EK_GLOBALS find local FALSE E_PACKAGE TRUE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 initializes 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_END_MARKER

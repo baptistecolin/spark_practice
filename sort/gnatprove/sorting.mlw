@@ -1797,7 +1797,7 @@ module Sorting__sorted__t
  use import "_gnatprove_standard".Main
  use        Sorting__nat_array
 
- function t #"sorting.ads" 4 0 0#"model_projected" "model_trace:2700" "name:T" 
+ function t #"sorting.ads" 4 0 0#"model_projected" "model_trace:2732" "name:T" 
    : Sorting__nat_array.nat_array
  
  function attr__ATTRIBUTE_ADDRESS 
@@ -1816,7 +1816,7 @@ end
 module Sorting__sorted__i
  use import "_gnatprove_standard".Main
 
- function i #"sorting.ads" 4 0 0#"model" "model_trace:2709" "name:I" 
+ function i #"sorting.ads" 4 0 0#"model" "model_trace:2741" "name:I" 
    : int
  
  function attr__ATTRIBUTE_ADDRESS 
@@ -1835,7 +1835,7 @@ end
 module Sorting__sorted__j
  use import "_gnatprove_standard".Main
 
- function j #"sorting.ads" 4 0 0#"model" "model_trace:2716" "name:J" 
+ function j #"sorting.ads" 4 0 0#"model" "model_trace:2748" "name:J" 
    : int
  
  function attr__ATTRIBUTE_ADDRESS 
@@ -1863,12 +1863,12 @@ module Sorting__sorted
 
 end
 
-(* Module for defining the constant "t" defined at sorting.ads:14, created in Gnat2Why.Decls.Translate_Constant *)
+(* Module for defining the constant "t" defined at sorting.ads:15, created in Gnat2Why.Decls.Translate_Constant *)
 module Sorting__max__t
  use import "_gnatprove_standard".Main
  use        Sorting__nat_array
 
- function t #"sorting.ads" 14 0 0#"model_projected" "name:T" "model_trace:2786" 
+ function t #"sorting.ads" 15 0 0#"model_projected" "name:T" "model_trace:2825" 
    : Sorting__nat_array.nat_array
  
  function attr__ATTRIBUTE_ADDRESS 
@@ -1876,18 +1876,18 @@ module Sorting__max__t
 
 end
 
-(* Module giving an empty axiom for the entity "t" defined at sorting.ads:14, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "t" defined at sorting.ads:15, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Sorting__max__t___axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module for defining the constant "i" defined at sorting.ads:15, created in Gnat2Why.Decls.Translate_Constant *)
+(* Module for defining the constant "i" defined at sorting.ads:16, created in Gnat2Why.Decls.Translate_Constant *)
 module Sorting__max__i
  use import "_gnatprove_standard".Main
 
- function i #"sorting.ads" 15 0 0#"model" "name:I" "model_trace:2795" 
+ function i #"sorting.ads" 16 0 0#"model" "name:I" "model_trace:2834" 
    : int
  
  function attr__ATTRIBUTE_ADDRESS 
@@ -1895,18 +1895,18 @@ module Sorting__max__i
 
 end
 
-(* Module giving an empty axiom for the entity "i" defined at sorting.ads:15, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "i" defined at sorting.ads:16, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Sorting__max__i___axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module for defining the constant "j" defined at sorting.ads:16, created in Gnat2Why.Decls.Translate_Constant *)
+(* Module for defining the constant "j" defined at sorting.ads:17, created in Gnat2Why.Decls.Translate_Constant *)
 module Sorting__max__j
  use import "_gnatprove_standard".Main
 
- function j #"sorting.ads" 16 0 0#"model" "name:J" "model_trace:2804" 
+ function j #"sorting.ads" 17 0 0#"model" "name:J" "model_trace:2843" 
    : int
  
  function attr__ATTRIBUTE_ADDRESS 
@@ -1914,21 +1914,21 @@ module Sorting__max__j
 
 end
 
-(* Module giving an empty axiom for the entity "j" defined at sorting.ads:16, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "j" defined at sorting.ads:17, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Sorting__max__j___axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module for axiomatizing type "T10s" defined at sorting.ads:20, created in Gnat2Why.Types.Translate_Type *)
-module Sorting__max__L9s__T10s
+(* Module for axiomatizing type "T11s" defined at sorting.ads:20, created in Gnat2Why.Types.Translate_Type *)
+module Sorting__max__L10s__T11s
  use import "_gnatprove_standard".Main
  use import "int".Int
  use        Standard__integer
  use        Standard__integer__rep
 
- type t10s =
+ type t11s =
   Standard__integer.integer
  
  predicate dynamic_property 
@@ -1936,30 +1936,30 @@ module Sorting__max__L9s__T10s
   ( (first_int <= x) /\ (x <= last_int) )
  
  clone export "ada__model".Dynamic_Discrete with
- type t = t10s, 
+ type t = t11s, 
  type rep_type = int, 
  function base_to_rep = Standard__integer__rep.to_rep, 
  function base_of_rep = Standard__integer__rep.of_rep, 
  predicate dynamic_property = dynamic_property
  
- type t10s__ref =
-  { mutable t10s__content "model_trace:" "name:" : t10s }
+ type t11s__ref =
+  { mutable t11s__content "model_trace:" "name:" : t11s }
  
- function t10s__ref___projection 
-   (a : t10s__ref) : t10s =
-  a.t10s__content
+ function t11s__ref___projection 
+   (a : t11s__ref) : t11s =
+  a.t11s__content
  
- meta "model_projection" function t10s__ref___projection
+ meta "model_projection" function t11s__ref___projection
  
- meta "inline : no" function t10s__ref___projection
+ meta "inline : no" function t11s__ref___projection
  
- val t10s__havoc 
-   (x : t10s__ref) : unit
+ val t11s__havoc 
+   (x : t11s__ref) : unit
   writes {x}
 
 end
 
-(* Module for possibly declaring a logic function for "max" defined at sorting.ads:13, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+(* Module for possibly declaring a logic function for "max" defined at sorting.ads:14, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
 module Sorting__max
  use import "_gnatprove_standard".Main
  use        Sorting__nat_array
@@ -1972,11 +1972,11 @@ module Sorting__max
 
 end
 
-(* Module for defining the constant "i" defined at sorting.ads:26, created in Gnat2Why.Decls.Translate_Constant *)
+(* Module for defining the constant "i" defined at sorting.ads:25, created in Gnat2Why.Decls.Translate_Constant *)
 module Sorting__swap__i
  use import "_gnatprove_standard".Main
 
- function i #"sorting.ads" 26 0 0#"model" "name:I" "model_trace:2899" 
+ function i #"sorting.ads" 25 0 0#"model" "name:I" "model_trace:2922" 
    : int
  
  function attr__ATTRIBUTE_ADDRESS 
@@ -1984,18 +1984,18 @@ module Sorting__swap__i
 
 end
 
-(* Module giving an empty axiom for the entity "i" defined at sorting.ads:26, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "i" defined at sorting.ads:25, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Sorting__swap__i___axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module for defining the constant "j" defined at sorting.ads:27, created in Gnat2Why.Decls.Translate_Constant *)
+(* Module for defining the constant "j" defined at sorting.ads:26, created in Gnat2Why.Decls.Translate_Constant *)
 module Sorting__swap__j
  use import "_gnatprove_standard".Main
 
- function j #"sorting.ads" 27 0 0#"model" "name:J" "model_trace:2908" 
+ function j #"sorting.ads" 26 0 0#"model" "name:J" "model_trace:2931" 
    : int
  
  function attr__ATTRIBUTE_ADDRESS 
@@ -2003,21 +2003,21 @@ module Sorting__swap__j
 
 end
 
-(* Module giving an empty axiom for the entity "j" defined at sorting.ads:27, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "j" defined at sorting.ads:26, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Sorting__swap__j___axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module for axiomatizing type "T12s" defined at sorting.ads:29, created in Gnat2Why.Types.Translate_Type *)
-module Sorting__swap__L11s__T12s
+(* Module for axiomatizing type "T13s" defined at sorting.ads:28, created in Gnat2Why.Types.Translate_Type *)
+module Sorting__swap__L12s__T13s
  use import "_gnatprove_standard".Main
  use import "int".Int
  use        Standard__integer
  use        Standard__integer__rep
 
- type t12s =
+ type t13s =
   Standard__integer.integer
  
  predicate dynamic_property 
@@ -2025,25 +2025,25 @@ module Sorting__swap__L11s__T12s
   ( (first_int <= x) /\ (x <= last_int) )
  
  clone export "ada__model".Dynamic_Discrete with
- type t = t12s, 
+ type t = t13s, 
  type rep_type = int, 
  function base_to_rep = Standard__integer__rep.to_rep, 
  function base_of_rep = Standard__integer__rep.of_rep, 
  predicate dynamic_property = dynamic_property
  
- type t12s__ref =
-  { mutable t12s__content "model_trace:" "name:" : t12s }
+ type t13s__ref =
+  { mutable t13s__content "model_trace:" "name:" : t13s }
  
- function t12s__ref___projection 
-   (a : t12s__ref) : t12s =
-  a.t12s__content
+ function t13s__ref___projection 
+   (a : t13s__ref) : t13s =
+  a.t13s__content
  
- meta "model_projection" function t12s__ref___projection
+ meta "model_projection" function t13s__ref___projection
  
- meta "inline : no" function t12s__ref___projection
+ meta "inline : no" function t13s__ref___projection
  
- val t12s__havoc 
-   (x : t12s__ref) : unit
+ val t13s__havoc 
+   (x : t13s__ref) : unit
   writes {x}
 
 end
@@ -2531,18 +2531,94 @@ module Sorting__sort__L_2__T15b
   writes {x}
 
 end
+
+(* Module for axiomatizing type "T19b" defined at sorting.adb:48, created in Gnat2Why.Types.Translate_Type *)
+module Sorting__sort__L_2__L18b__T19b
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer
+ use        Standard__integer__rep
+
+ type t19b =
+  Standard__integer.integer
+ 
+ predicate dynamic_property 
+   (first_int : int) (last_int : int) (x : int)  =
+  ( (first_int <= x) /\ (x <= last_int) )
+ 
+ clone export "ada__model".Dynamic_Discrete with
+ type t = t19b, 
+ type rep_type = int, 
+ function base_to_rep = Standard__integer__rep.to_rep, 
+ function base_of_rep = Standard__integer__rep.of_rep, 
+ predicate dynamic_property = dynamic_property
+ 
+ type t19b__ref =
+  { mutable t19b__content "model_trace:" "name:" : t19b }
+ 
+ function t19b__ref___projection 
+   (a : t19b__ref) : t19b =
+  a.t19b__content
+ 
+ meta "model_projection" function t19b__ref___projection
+ 
+ meta "inline : no" function t19b__ref___projection
+ 
+ val t19b__havoc 
+   (x : t19b__ref) : unit
+  writes {x}
+
+end
+
+(* Module for axiomatizing type "T17b" defined at sorting.adb:48, created in Gnat2Why.Types.Translate_Type *)
+module Sorting__sort__L_2__L16b__T17b
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer
+ use        Standard__integer__rep
+
+ type t17b =
+  Standard__integer.integer
+ 
+ predicate dynamic_property 
+   (first_int : int) (last_int : int) (x : int)  =
+  ( (first_int <= x) /\ (x <= last_int) )
+ 
+ clone export "ada__model".Dynamic_Discrete with
+ type t = t17b, 
+ type rep_type = int, 
+ function base_to_rep = Standard__integer__rep.to_rep, 
+ function base_of_rep = Standard__integer__rep.of_rep, 
+ predicate dynamic_property = dynamic_property
+ 
+ type t17b__ref =
+  { mutable t17b__content "model_trace:" "name:" : t17b }
+ 
+ function t17b__ref___projection 
+   (a : t17b__ref) : t17b =
+  a.t17b__content
+ 
+ meta "model_projection" function t17b__ref___projection
+ 
+ meta "inline : no" function t17b__ref___projection
+ 
+ val t17b__havoc 
+   (x : t17b__ref) : unit
+  writes {x}
+
+end
 (* Module for defining a ref holding the value of variable "t" defined at sorting.ads:8, created in Gnat2Why.Decls.Translate_Variable *)
 module Sorting__sort__t
  use import "_gnatprove_standard".Main
  use        Standard__integer
  use        Array__Int__Standard__integer
 
- val t #"sorting.ads" 8 0 0#"model_projected" "name:T" "model_trace:2755"  : Array__Int__Standard__integer.map__ref 
+ val t #"sorting.ads" 8 0 0#"model_projected" "name:T" "model_trace:2787"  : Array__Int__Standard__integer.map__ref 
  
- function t__first #"sorting.ads" 8 0 0#"model_projected" "name:T" "model_trace:2755'First" 
+ function t__first #"sorting.ads" 8 0 0#"model_projected" "name:T" "model_trace:2787'First" 
    : Standard__integer.integer
  
- function t__last #"sorting.ads" 8 0 0#"model_projected" "name:T" "model_trace:2755'Last" 
+ function t__last #"sorting.ads" 8 0 0#"model_projected" "name:T" "model_trace:2787'Last" 
    : Standard__integer.integer
  
  function attr__ATTRIBUTE_ADDRESS 
@@ -2557,18 +2633,18 @@ module Sorting__sort__t___axiom
 
 end
 
-(* Module for defining a ref holding the value of variable "t" defined at sorting.ads:25, created in Gnat2Why.Decls.Translate_Variable *)
+(* Module for defining a ref holding the value of variable "t" defined at sorting.ads:24, created in Gnat2Why.Decls.Translate_Variable *)
 module Sorting__swap__t
  use import "_gnatprove_standard".Main
  use        Standard__integer
  use        Array__Int__Standard__integer
 
- val t #"sorting.ads" 25 0 0#"model_projected" "name:T" "model_trace:2890"  : Array__Int__Standard__integer.map__ref 
+ val t #"sorting.ads" 24 0 0#"model_projected" "name:T" "model_trace:2913"  : Array__Int__Standard__integer.map__ref 
  
- function t__first #"sorting.ads" 25 0 0#"model_projected" "name:T" "model_trace:2890'First" 
+ function t__first #"sorting.ads" 24 0 0#"model_projected" "name:T" "model_trace:2913'First" 
    : Standard__integer.integer
  
- function t__last #"sorting.ads" 25 0 0#"model_projected" "name:T" "model_trace:2890'Last" 
+ function t__last #"sorting.ads" 24 0 0#"model_projected" "name:T" "model_trace:2913'Last" 
    : Standard__integer.integer
  
  function attr__ATTRIBUTE_ADDRESS 
@@ -2576,7 +2652,7 @@ module Sorting__swap__t
 
 end
 
-(* Module giving an empty axiom for the entity "t" defined at sorting.ads:25, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "t" defined at sorting.ads:24, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Sorting__swap__t___axiom
  use import "_gnatprove_standard".Main
 
@@ -3060,7 +3136,7 @@ module Sorting__sort
 
 end
 
-(* Module for possibly declaring a logic function for "swap" defined at sorting.ads:24, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+(* Module for possibly declaring a logic function for "swap" defined at sorting.ads:23, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
 module Sorting__swap
  use import "_gnatprove_standard".Main
 
@@ -3111,15 +3187,15 @@ module Sorting__nat_array___axiom
 
 end
 
-(* Module giving axioms for type "T10s" defined at sorting.ads:20, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Sorting__max__L9s__T10s___axiom
+(* Module giving axioms for type "T11s" defined at sorting.ads:20, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Sorting__max__L10s__T11s___axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for type "T12s" defined at sorting.ads:29, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Sorting__swap__L11s__T12s___axiom
+(* Module giving axioms for type "T13s" defined at sorting.ads:28, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Sorting__swap__L12s__T13s___axiom
  use import "_gnatprove_standard".Main
 
 
@@ -3237,6 +3313,20 @@ module Sorting__sort__L_2__T15b___axiom
 
 
 end
+
+(* Module giving axioms for type "T19b" defined at sorting.adb:48, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Sorting__sort__L_2__L18b__T19b___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module giving axioms for type "T17b" defined at sorting.adb:48, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Sorting__sort__L_2__L16b__T17b___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
 (* Module giving a program function and a defining axiom for the expression function "sorted" defined at sorting.ads:4, created in Gnat2Why.Subprograms.Translate_Expression_Function_Body *)
 module Sorting__sorted___axiom
  use import "_gnatprove_standard".Main
@@ -3284,6 +3374,7 @@ end
 (* Module for declaring a program function (and possibly an axiom) for "sort" defined at sorting.ads:8, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
 module Sorting__sort___axiom
  use import "_gnatprove_standard".Main
+ use import "int".Int
  use        Standard__integer
  use        Standard__positive
  use        Standard__integer__rep
@@ -3293,7 +3384,9 @@ module Sorting__sort___axiom
 
  val sort 
    (t : Array__Int__Standard__integer.map__ref) (t__first : Standard__integer.integer) (t__last : Standard__integer.integer) : unit
-  requires {  true }
+  requires {  ((if (((Standard__integer__rep.to_rep t__first) <= (Standard__integer__rep.to_rep t__last))) then (
+   (((Standard__integer__rep.to_rep t__last) - (Standard__integer__rep.to_rep t__first)) + 1)) else (
+   0)) > 0) }
   ensures {  ( ((epsilon temp___result_163 : bool.
    ( (temp___result_163 = (Sorting__sorted.sorted (Sorting__nat_array.of_array t.Array__Int__Standard__integer.map__content (Standard__integer__rep.to_rep t__first) (Standard__integer__rep.to_rep t__last)) (Standard__integer__rep.to_rep t__first) (Standard__integer__rep.to_rep t__last))) /\ (Sorting__sorted.sorted__function_guard temp___result_163 (Sorting__nat_array.of_array t.Array__Int__Standard__integer.map__content (Standard__integer__rep.to_rep t__first) (Standard__integer__rep.to_rep t__last)) (Standard__integer__rep.to_rep t__first) (Standard__integer__rep.to_rep t__last)) )) = True) /\ (if (True) then (
    true) else (
@@ -3302,7 +3395,7 @@ module Sorting__sort___axiom
 
 end
 
-(* Module for declaring a program function (and possibly an axiom) for "max" defined at sorting.ads:13, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+(* Module for declaring a program function (and possibly an axiom) for "max" defined at sorting.ads:14, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
 module Sorting__max___axiom
  use import "_gnatprove_standard".Main
  use import "int".Int
@@ -3320,22 +3413,22 @@ module Sorting__max___axiom
 
  val max 
    (t : Sorting__nat_array.nat_array) (i : int) (j : int) : int
-  requires {  ( ( ( ( ( ((Sorting__nat_array.first t) <= i) /\ (i <= (Sorting__nat_array.last t)) ) /\ (i >= (Sorting__nat_array.first t)) ) /\ ( ((Sorting__nat_array.first t) <= j) /\ (j <= (Sorting__nat_array.last t)) ) ) /\ (j <= (Sorting__nat_array.last t)) ) /\ ((j - i) >= 0) ) }
-  ensures {  ( ( (result = (Sorting__max.max t i j)) /\ (Sorting__max.max__function_guard result t i j) ) /\ ( (Standard__positive___axiom.dynamic_invariant result True False True True) /\ ( ( (forall k   "model" "name:K" "model_trace:2851"  : int.
-   ( ( (i <= k) /\ (k <= j) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Sorting__nat_array.to_array t) result)) >= (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Sorting__nat_array.to_array t) k))) )) /\ (result >= i) ) /\ (result <= j) ) ) ) }
+  requires {  ( ( ( ((Sorting__nat_array.first t) <= i) /\ (i <= (Sorting__nat_array.last t)) ) /\ ( ((Sorting__nat_array.first t) <= j) /\ (j <= (Sorting__nat_array.last t)) ) ) /\ ((j - i) >= 0) ) }
+  ensures {  ( ( (result = (Sorting__max.max t i j)) /\ (Sorting__max.max__function_guard result t i j) ) /\ ( (Standard__positive___axiom.dynamic_invariant result True False True True) /\ ( (forall k   "model" "name:K" "model_trace:2878"  : int.
+   ( ( (i <= k) /\ (k <= j) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Sorting__nat_array.to_array t) result)) >= (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Sorting__nat_array.to_array t) k))) )) /\ ( (i <= result) /\ (result <= j) ) ) ) ) }
  
  axiom max__post_axiom :
   (forall t   : Sorting__nat_array.nat_array.
   (forall i   j   : int [(Sorting__max.max t i j)].
-   ( ( ( ( (Sorting__nat_array___axiom.dynamic_invariant t True True True True) /\ (Standard__positive___axiom.dynamic_invariant i True True True True) ) /\ (Standard__positive___axiom.dynamic_invariant j True True True True) ) /\ ( ( ( ( ( ((Sorting__nat_array.first t) <= i) /\ (i <= (Sorting__nat_array.last t)) ) /\ (i >= (Sorting__nat_array.first t)) ) /\ ( ((Sorting__nat_array.first t) <= j) /\ (j <= (Sorting__nat_array.last t)) ) ) /\ (j <= (Sorting__nat_array.last t)) ) /\ ((j - i) >= 0) ) ) -> (let result = (Sorting__max.max t i j) in (
+   ( ( ( ( (Sorting__nat_array___axiom.dynamic_invariant t True True True True) /\ (Standard__positive___axiom.dynamic_invariant i True True True True) ) /\ (Standard__positive___axiom.dynamic_invariant j True True True True) ) /\ ( ( ( ((Sorting__nat_array.first t) <= i) /\ (i <= (Sorting__nat_array.last t)) ) /\ ( ((Sorting__nat_array.first t) <= j) /\ (j <= (Sorting__nat_array.last t)) ) ) /\ ((j - i) >= 0) ) ) -> (let result = (Sorting__max.max t i j) in (
     (if ((Sorting__max.max__function_guard result t i j)) then (
-     ( ( ( ( (forall k   "model" "name:K" "model_trace:2851"  : int.
-      ( ( (i <= k) /\ (k <= j) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Sorting__nat_array.to_array t) result)) >= (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Sorting__nat_array.to_array t) k))) )) /\ (result >= i) ) /\ (result <= j) ) /\ (Standard__positive___axiom.dynamic_invariant result True False True True) ) /\ true )) else true)))
+     ( ( ( (forall k   "model" "name:K" "model_trace:2878"  : int.
+      ( ( (i <= k) /\ (k <= j) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Sorting__nat_array.to_array t) result)) >= (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Sorting__nat_array.to_array t) k))) )) /\ ( (i <= result) /\ (result <= j) ) ) /\ (Standard__positive___axiom.dynamic_invariant result True False True True) ) /\ true )) else true)))
     )))
 
 end
 
-(* Module for declaring a program function (and possibly an axiom) for "swap" defined at sorting.ads:24, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+(* Module for declaring a program function (and possibly an axiom) for "swap" defined at sorting.ads:23, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
 module Sorting__swap___axiom
  use import "_gnatprove_standard".Main
  use import "int".Int
@@ -3351,7 +3444,7 @@ module Sorting__swap___axiom
  val swap 
    (t : Array__Int__Standard__integer.map__ref) (t__first : Standard__integer.integer) (t__last : Standard__integer.integer) (i : int) (j : int) : unit
   requires {  ( ( ((Standard__integer__rep.to_rep t__first) <= i) /\ (i <= (Standard__integer__rep.to_rep t__last)) ) /\ ( ((Standard__integer__rep.to_rep t__first) <= j) /\ (j <= (Standard__integer__rep.to_rep t__last)) ) ) }
-  ensures {  ( (forall k   "model" "name:K" "model_trace:2936"  : int.
+  ensures {  ( (forall k   "model" "name:K" "model_trace:2959"  : int.
    ( ( ((Standard__integer__rep.to_rep t__first) <= k) /\ (k <= (Standard__integer__rep.to_rep t__last)) ) -> ( ( ( (k = i) /\ ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get t.Array__Int__Standard__integer.map__content k)) = (Standard__integer__rep.to_rep (let temp___167 = (old t.Array__Int__Standard__integer.map__content ) in (
     (Array__Int__Standard__integer.get temp___167 j)))
    )) ) \/ ( (k = j) /\ ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get t.Array__Int__Standard__integer.map__content k)) = (Standard__integer__rep.to_rep (let temp___168 = (old t.Array__Int__Standard__integer.map__content ) in (
@@ -3379,23 +3472,24 @@ module Sorting__package_def
   (#"sorting.ads" 6 0 0# ());
   (#"sorting.ads" 5 0 0# ());
   (#"sorting.ads" 8 0 0# ());
+  (#"sorting.ads" 10 0 0# ());
   (#"sorting.ads" 9 0 0# ());
-  (#"sorting.ads" 13 0 0# ());
+  (#"sorting.ads" 14 0 0# ());
   (#"sorting.ads" 20 0 0# ());
-  (#"sorting.ads" 17 0 0# ());
-  (#"sorting.ads" 24 0 0# ());
-  (#"sorting.ads" 29 0 0# ());
+  (#"sorting.ads" 18 0 0# ());
+  (#"sorting.ads" 23 0 0# ());
   (#"sorting.ads" 28 0 0# ());
-  (#"sorting.ads" 28 0 0# ());
-  (#"sorting.ads" 28 0 0# ());
-  (#"sorting.ads" 28 0 0# ());
-  (#"sorting.ads" 28 0 0# ());
-  (#"sorting.ads" 28 0 0# ());
+  (#"sorting.ads" 27 0 0# ());
+  (#"sorting.ads" 27 0 0# ());
+  (#"sorting.ads" 27 0 0# ());
+  (#"sorting.ads" 27 0 0# ());
+  (#"sorting.ads" 27 0 0# ());
+  (#"sorting.ads" 27 0 0# ());
   (#"sorting.adb" 3 0 0# ());
   (#"sorting.adb" 13 0 0# ());
   (#"sorting.adb" 33 0 0# ());
   (#"sorting.adb" 36 0 0# ());
-  ( "GP_Sloc:sorting.adb:51:1" (#"sorting.adb" 51 0 0# ()) ) )
+  ( "GP_Sloc:sorting.adb:53:1" (#"sorting.adb" 53 0 0# ()) ) )
 end
 
 (* Module for checking contracts and absence of run-time errors in subprogram "sorted" defined at sorting.ads:4, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
@@ -3425,7 +3519,7 @@ module Sorting__sorted__subprogram_def
  use        Sorting__sorted__i___axiom
  use        Sorting__sorted__j___axiom
 
- val sorting__sorted__result "model_projected" "model_trace:2693@result" "name:Sorted"  : bool__ref 
+ val sorting__sorted__result "model_projected" "model_trace:2725@result" "name:Sorted"  : bool__ref 
  
  let def #"sorting.ads" 4 0 0#"W:diverges:N" "GP_Subp:sorting.ads:4" 
    (__void_param : unit)
@@ -3501,6 +3595,8 @@ module Sorting__sort__subprogram_def
  use import "int".Int
  use        "_gnatprove_standard".Boolean
  use        Standard__integer
+ use        Standard__integer
+ use        Standard__integer__rep
  use        Standard__natural
  use        Standard__natural___axiom
  use        Standard__positive
@@ -3510,6 +3606,7 @@ module Sorting__sort__subprogram_def
  use        Sorting__sorted___axiom
  use        Sorting__max___axiom
  use        Sorting__swap___axiom
+ use        Array__Int__Standard__integer
  use        Sorting__nat_array
  use        Array__Int__Standard__integer
  use        Sorting__sort__t
@@ -3542,9 +3639,9 @@ module Sorting__sort__subprogram_def
  let def #"sorting.ads" 8 0 0#"W:diverges:N" "GP_Subp:sorting.ads:8" 
    (__void_param : unit)
   requires { #"sorting.ads" 8 0 0# true }
-  ensures { #"sorting.ads" 8 0 0# (#"sorting.ads" 9 0 0# ( "model_vc_post" "keep_on_simp" "GP_Shape:pragargs__call_sorted" "GP_Sloc:sorting.ads:9:15" "GP_Reason:VC_POSTCONDITION" "GP_Id:22" "comment:      Post => (Sorted (T, T'First, T'Last));
-              ^ sorting.ads:9:15:VC_POSTCONDITION" ( "GP_Pretty_Ada:3055" "GP_Sloc:sorting.ads:9:15" ((epsilon temp___result_214 : bool.
-   ( (temp___result_214 = (Sorting__sorted.sorted (Sorting__nat_array.of_array Sorting__sort__t.t.Array__Int__Standard__integer.map__content (Standard__integer__rep.to_rep Sorting__sort__t.t__first) (Standard__integer__rep.to_rep Sorting__sort__t.t__last)) (Standard__integer__rep.to_rep Sorting__sort__t.t__first) (Standard__integer__rep.to_rep Sorting__sort__t.t__last))) /\ (Sorting__sorted.sorted__function_guard temp___result_214 (Sorting__nat_array.of_array Sorting__sort__t.t.Array__Int__Standard__integer.map__content (Standard__integer__rep.to_rep Sorting__sort__t.t__first) (Standard__integer__rep.to_rep Sorting__sort__t.t__last)) (Standard__integer__rep.to_rep Sorting__sort__t.t__first) (Standard__integer__rep.to_rep Sorting__sort__t.t__last)) )) = True) ) )) }
+  ensures { #"sorting.ads" 8 0 0# (#"sorting.ads" 10 0 0# ( "model_vc_post" "keep_on_simp" "GP_Shape:pragargs__call_sorted" "GP_Sloc:sorting.ads:10:15" "GP_Reason:VC_POSTCONDITION" "GP_Id:28" "comment:      Post => (Sorted (T, T'First, T'Last));
+              ^ sorting.ads:10:15:VC_POSTCONDITION" ( "GP_Pretty_Ada:3089" "GP_Sloc:sorting.ads:10:15" ((epsilon temp___result_215 : bool.
+   ( (temp___result_215 = (Sorting__sorted.sorted (Sorting__nat_array.of_array Sorting__sort__t.t.Array__Int__Standard__integer.map__content (Standard__integer__rep.to_rep Sorting__sort__t.t__first) (Standard__integer__rep.to_rep Sorting__sort__t.t__last)) (Standard__integer__rep.to_rep Sorting__sort__t.t__first) (Standard__integer__rep.to_rep Sorting__sort__t.t__last))) /\ (Sorting__sorted.sorted__function_guard temp___result_215 (Sorting__nat_array.of_array Sorting__sort__t.t.Array__Int__Standard__integer.map__content (Standard__integer__rep.to_rep Sorting__sort__t.t__first) (Standard__integer__rep.to_rep Sorting__sort__t.t__last)) (Standard__integer__rep.to_rep Sorting__sort__t.t__first) (Standard__integer__rep.to_rep Sorting__sort__t.t__last)) )) = True) ) )) }
    =
   ( () (* Assume dynamic invariants of inputs of the subprogram sorting.ads:8 *)
   ;
@@ -3556,12 +3653,19 @@ module Sorting__sort__subprogram_def
   ;
   () (* Check for RTE in the Pre of the subprogram sorting.ads:8 *)
   ;
-   abstract ensures {true}(let _ = True in (
+   abstract ensures {true}(let _ = ((  abstract ensures {true}(let _ = Sorting__sort__t.t.Array__Int__Standard__integer.map__content in (
+   ()))
+   end ;
+  (if (((Standard__integer__rep.to_rep(Sorting__sort__t.t__first)) <= (Standard__integer__rep.to_rep(Sorting__sort__t.t__last)))) then (
+   (((Standard__integer__rep.to_rep(Sorting__sort__t.t__last)) - (Standard__integer__rep.to_rep(Sorting__sort__t.t__first))) + 1)) else (
+   0)) ) > 0) in (
    ()))
    end ;
   () (* Assume Pre of the subprogram sorting.ads:8 *)
   ;
-   assume {  true };
+   assume {  ((if (((Standard__integer__rep.to_rep Sorting__sort__t.t__first) <= (Standard__integer__rep.to_rep Sorting__sort__t.t__last))) then (
+   (((Standard__integer__rep.to_rep Sorting__sort__t.t__last) - (Standard__integer__rep.to_rep Sorting__sort__t.t__first)) + 1)) else (
+   0)) > 0) };
    try
    ( (#"sorting.adb" 36 0 0# ());
    (#"sorting.adb" 37 0 0# ( #"sorting.adb" 37 0 0# abstract ensures {true}(let _ = () in (
@@ -3588,17 +3692,17 @@ module Sorting__sort__subprogram_def
     ;
     (if ((Boolean.andb((temp___203 <= Sorting__sort__L_2__k.k.int__content)) ((Sorting__sort__L_2__k.k.int__content <= temp___204)))) then (
      #"sorting.adb" 40 0 0# try
-      ( #"sorting.adb" 40 0 0# abstract ensures {true}(let _ = Sorting__sort__t.t.Array__Int__Standard__integer.map__content in (
+      ( #"sorting.adb" 40 0 0# abstract ensures {true}(let _ = Sorting__sort__L_2__k.k.int__content in (
        ()))
        end ;
-      (let temp___209 = #"sorting.adb" 40 0 0# (any Array__Int__Standard__integer.map
-      ensures {#"sorting.adb" 40 0 0# (result = Sorting__sort__t.t.Array__Int__Standard__integer.map__content)} 
+      (let temp___209 = #"sorting.adb" 40 0 0# (any int
+      ensures {#"sorting.adb" 40 0 0# (result = Sorting__sort__L_2__k.k.int__content)} 
       ) in (
-       ( #"sorting.adb" 40 0 0# abstract ensures {true}(let _ = Sorting__sort__L_2__k.k.int__content in (
+       ( #"sorting.adb" 40 0 0# abstract ensures {true}(let _ = Sorting__sort__t.t.Array__Int__Standard__integer.map__content in (
         ()))
         end ;
-       (let temp___207 = #"sorting.adb" 40 0 0# (any int
-       ensures {#"sorting.adb" 40 0 0# (result = Sorting__sort__L_2__k.k.int__content)} 
+       (let temp___208 = #"sorting.adb" 40 0 0# (any Array__Int__Standard__integer.map
+       ensures {#"sorting.adb" 40 0 0# (result = Sorting__sort__t.t.Array__Int__Standard__integer.map__content)} 
        ) in (
         ( #"sorting.adb" 40 0 0# abstract ensures {true}(let _ = Sorting__sort__l.l.int__content in (
          ()))
@@ -3651,37 +3755,32 @@ module Sorting__sort__subprogram_def
           ;
            while True do
            invariant { 
-            (#"sorting.adb" 46 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:sorting.adb:46:33" "GP_Reason:VC_LOOP_INVARIANT" "GP_Id:13" "comment:         pragma Loop_Invariant (T'Last-L in T'Range);
-                                ^ sorting.adb:46:33:VC_LOOP_INVARIANT" "GP_Shape:L_2_while__pragargs__in" ( "GP_Pretty_Ada:2630" "GP_Sloc:sorting.adb:46:33" ( ((Standard__integer__rep.to_rep Sorting__sort__t.t__first) <= ((Standard__integer__rep.to_rep Sorting__sort__t.t__last) - Sorting__sort__l.l.int__content)) /\ (((Standard__integer__rep.to_rep Sorting__sort__t.t__last) - Sorting__sort__l.l.int__content) <= (Standard__integer__rep.to_rep Sorting__sort__t.t__last)) ) ) ))
+            (#"sorting.adb" 46 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:sorting.adb:46:33" "GP_Reason:VC_LOOP_INVARIANT" "GP_Id:13" "comment:         pragma Loop_Invariant (L = K - T'First);
+                                ^ sorting.adb:46:33:VC_LOOP_INVARIANT" "GP_Shape:L_2_while__pragargs__cmp" ( "GP_Pretty_Ada:2625" "GP_Sloc:sorting.adb:46:33" (Sorting__sort__l.l.int__content = (Sorting__sort__L_2__k.k.int__content - (Standard__integer__rep.to_rep Sorting__sort__t.t__first))) ) ))
             }
            invariant { 
             (#"sorting.adb" 47 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:sorting.adb:47:33" "GP_Reason:VC_LOOP_INVARIANT" "GP_Shape:L_2_while__pragargs__call_sorted" "GP_Id:18" "comment:         pragma Loop_Invariant (Sorted(T, T'Last-L, T'Last));
-                                ^ sorting.adb:47:33:VC_LOOP_INVARIANT" ( "GP_Sloc:sorting.adb:47:33" "GP_Pretty_Ada:2645" ((epsilon temp___result_210 : bool.
+                                ^ sorting.adb:47:33:VC_LOOP_INVARIANT" ( "GP_Sloc:sorting.adb:47:33" "GP_Pretty_Ada:2643" ((epsilon temp___result_210 : bool.
              ( (temp___result_210 = (Sorting__sorted.sorted (Sorting__nat_array.of_array Sorting__sort__t.t.Array__Int__Standard__integer.map__content (Standard__integer__rep.to_rep Sorting__sort__t.t__first) (Standard__integer__rep.to_rep Sorting__sort__t.t__last)) ((Standard__integer__rep.to_rep Sorting__sort__t.t__last) - Sorting__sort__l.l.int__content) (Standard__integer__rep.to_rep Sorting__sort__t.t__last))) /\ (Sorting__sorted.sorted__function_guard temp___result_210 (Sorting__nat_array.of_array Sorting__sort__t.t.Array__Int__Standard__integer.map__content (Standard__integer__rep.to_rep Sorting__sort__t.t__first) (Standard__integer__rep.to_rep Sorting__sort__t.t__last)) ((Standard__integer__rep.to_rep Sorting__sort__t.t__last) - Sorting__sort__l.l.int__content) (Standard__integer__rep.to_rep Sorting__sort__t.t__last)) )) = True) ) ))
+            }
+           invariant { 
+            (#"sorting.adb" 48 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_LOOP_INVARIANT" "GP_Sloc:sorting.adb:48:33" "GP_Id:24" "comment:         pragma Loop_Invariant (for all I in T'First .. T'Last-L - 1 =>
+                                ^ sorting.adb:48:33:VC_LOOP_INVARIANT" "GP_Shape:L_2_while__pragargs__forall" (forall i #"sorting.adb" 48 0 0#  "model" "name:I" "model_trace:2648"  : int.
+             ( ( ((Standard__integer__rep.to_rep Sorting__sort__t.t__first) <= i) /\ (i <= (((Standard__integer__rep.to_rep Sorting__sort__t.t__last) - Sorting__sort__l.l.int__content) - 1)) ) -> ( "GP_Pretty_Ada:2671" "GP_Sloc:sorting.adb:49:34" ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Sorting__sort__t.t.Array__Int__Standard__integer.map__content i)) <= (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Sorting__sort__t.t.Array__Int__Standard__integer.map__content ((Standard__integer__rep.to_rep Sorting__sort__t.t__last) - Sorting__sort__l.l.int__content)))) ) )) ))
             }
            ( () (* Assume implicit invariants from the loop sorting.adb:40 *)
            ;
-            assume {  (Boolean.andb(( ( ( ( ( ( ( ( true /\ (Standard__positive___axiom.dynamic_invariant Sorting__sort__local_max.local_max.int__content False True True True) ) /\ true ) /\ (Standard__natural___axiom.dynamic_invariant Sorting__sort__l.l.int__content False True True True) ) /\ true ) /\ (if (((Standard__integer__rep.to_rep Sorting__sort__t.t__first) <= (Standard__integer__rep.to_rep Sorting__sort__t.t__last))) then (
-            (Sorting__sort__L_2__T15b.dynamic_property (Standard__integer__rep.to_rep Sorting__sort__t.t__first) (Standard__integer__rep.to_rep Sorting__sort__t.t__last) Sorting__sort__L_2__k.k.int__content)) else true) ) /\ true ) /\ (if (True) then (
+            assume {  (Boolean.andb(( ( ( ( ( ( ( ( true /\ (Standard__positive___axiom.dynamic_invariant Sorting__sort__local_max.local_max.int__content False True True True) ) /\ true ) /\ (Standard__natural___axiom.dynamic_invariant Sorting__sort__l.l.int__content False True True True) ) /\ true ) /\ (if (True) then (
             true) else (
-            (Sorting__nat_array.dynamic_property Standard__positive.first Standard__positive.last (Standard__integer__rep.to_rep Sorting__sort__t.t__first) (Standard__integer__rep.to_rep Sorting__sort__t.t__last)))) ) /\ true )) (( ((Standard__integer__rep.to_rep Sorting__sort__t.t__first) <= Sorting__sort__L_2__k.k.int__content) /\ (Sorting__sort__L_2__k.k.int__content <= (Standard__integer__rep.to_rep Sorting__sort__t.t__last)) ))) };
+            (Sorting__nat_array.dynamic_property Standard__positive.first Standard__positive.last (Standard__integer__rep.to_rep Sorting__sort__t.t__first) (Standard__integer__rep.to_rep Sorting__sort__t.t__last)))) ) /\ true ) /\ (if (((Standard__integer__rep.to_rep Sorting__sort__t.t__first) <= (Standard__integer__rep.to_rep Sorting__sort__t.t__last))) then (
+            (Sorting__sort__L_2__T15b.dynamic_property (Standard__integer__rep.to_rep Sorting__sort__t.t__first) (Standard__integer__rep.to_rep Sorting__sort__t.t__last) Sorting__sort__L_2__k.k.int__content)) else true) ) /\ true )) (( ((Standard__integer__rep.to_rep Sorting__sort__t.t__first) <= Sorting__sort__L_2__k.k.int__content) /\ (Sorting__sort__L_2__k.k.int__content <= (Standard__integer__rep.to_rep Sorting__sort__t.t__last)) ))) };
            () (* Check for absence of RTE in the invariant of loop sorting.adb:40 *)
            ;
-            abstract ensures {true}(let _ = (Boolean.andb(((Standard__integer__rep.to_rep((  abstract ensures {true}(let _ = Sorting__sort__t.t.Array__Int__Standard__integer.map__content in (
+            abstract ensures {true}(let _ = (Sorting__sort__l.l.int__content = (#"sorting.adb" 46 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:sorting.adb:46:39" "GP_Id:12" "comment:         pragma Loop_Invariant (L = K - T'First);
+                                      ^ sorting.adb:46:39:VC_OVERFLOW_CHECK" "GP_Shape:L_2_while__pragargs__cmp__sub" (Standard__integer.range_check_((Sorting__sort__L_2__k.k.int__content - (Standard__integer__rep.to_rep(( #"sorting.adb" 46 0 0# abstract ensures {true}(let _ = Sorting__sort__t.t.Array__Int__Standard__integer.map__content in (
             ()))
             end ;
-           Sorting__sort__t.t__first ))) <= (#"sorting.adb" 46 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:sorting.adb:46:39" "GP_Id:12" "comment:         pragma Loop_Invariant (T'Last-L in T'Range);
-                                      ^ sorting.adb:46:39:VC_OVERFLOW_CHECK" "GP_Shape:L_2_while__pragargs__in__sub" (Standard__integer.range_check_(((Standard__integer__rep.to_rep(( #"sorting.adb" 46 0 0# abstract ensures {true}(let _ = Sorting__sort__t.t.Array__Int__Standard__integer.map__content in (
-            ()))
-            end ;
-           Sorting__sort__t.t__last ))) - Sorting__sort__l.l.int__content))) )))) (((#"sorting.adb" 46 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:sorting.adb:46:39" "GP_Id:12" "comment:         pragma Loop_Invariant (T'Last-L in T'Range);
-                                      ^ sorting.adb:46:39:VC_OVERFLOW_CHECK" "GP_Shape:L_2_while__pragargs__in__sub" (Standard__integer.range_check_(((Standard__integer__rep.to_rep(( #"sorting.adb" 46 0 0# abstract ensures {true}(let _ = Sorting__sort__t.t.Array__Int__Standard__integer.map__content in (
-            ()))
-            end ;
-           Sorting__sort__t.t__last ))) - Sorting__sort__l.l.int__content))) )) <= (Standard__integer__rep.to_rep((  abstract ensures {true}(let _ = Sorting__sort__t.t.Array__Int__Standard__integer.map__content in (
-            ()))
-            end ;
-           Sorting__sort__t.t__last )))))) in (
+           Sorting__sort__t.t__first )))))) ))) in (
             ()))
             end ;
             abstract ensures {true}(let _ = (#"sorting.adb" 47 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_PRECONDITION" "GP_Sloc:sorting.adb:47:33" "GP_Id:17" "comment:         pragma Loop_Invariant (Sorted(T, T'Last-L, T'Last));
@@ -3695,6 +3794,38 @@ module Sorting__sort__subprogram_def
             ()))
             end ;
            Sorting__sort__t.t__last ))))) )))) )) in (
+            ()))
+            end ;
+            abstract ensures {true}(let _ = ( (let i =  (any int
+           ) in (
+            (if ((Boolean.andb(((Standard__integer__rep.to_rep((  abstract ensures {true}(let _ = Sorting__sort__t.t.Array__Int__Standard__integer.map__content in (
+             ()))
+             end ;
+            Sorting__sort__t.t__first ))) <= i)) ((i <= (#"sorting.adb" 48 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:sorting.adb:48:66" "GP_Id:20" "comment:         pragma Loop_Invariant (for all I in T'First .. T'Last-L - 1 =>
+                                                                 ^ sorting.adb:48:66:VC_OVERFLOW_CHECK" "GP_Shape:L_2_while__pragargs__forall__range__sub" (Standard__integer.range_check_(((#"sorting.adb" 48 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:sorting.adb:48:63" "GP_Id:19" "comment:         pragma Loop_Invariant (for all I in T'First .. T'Last-L - 1 =>
+                                                              ^ sorting.adb:48:63:VC_OVERFLOW_CHECK" "GP_Shape:L_2_while__pragargs__forall__range__sub__sub" (Standard__integer.range_check_(((Standard__integer__rep.to_rep(( #"sorting.adb" 48 0 0# abstract ensures {true}(let _ = Sorting__sort__t.t.Array__Int__Standard__integer.map__content in (
+             ()))
+             end ;
+            Sorting__sort__t.t__last ))) - Sorting__sort__l.l.int__content))) )) - 1))) )))))) then (
+              abstract ensures {true}(let _ = ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(Sorting__sort__t.t.Array__Int__Standard__integer.map__content) ((  assert {  (#"sorting.adb" 49 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:sorting.adb:49:37" "GP_Id:21" "comment:                                 T (I) <= T (T'Last-L)); 
+                                    ^ sorting.adb:49:37:VC_INDEX_CHECK" "GP_Shape:L_2_while__pragargs__forall__cmp__ixdcomp" ( ((Standard__integer__rep.to_rep Sorting__sort__t.t__first) <= i) /\ (i <= (Standard__integer__rep.to_rep Sorting__sort__t.t__last)) ) )) };
+             i ))))) <= (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(Sorting__sort__t.t.Array__Int__Standard__integer.map__content) ((let temp___211 = (#"sorting.adb" 49 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:sorting.adb:49:52" "GP_Id:22" "comment:                                 T (I) <= T (T'Last-L)); 
+                                                   ^ sorting.adb:49:52:VC_OVERFLOW_CHECK" "GP_Shape:L_2_while__pragargs__forall__cmp__ixdcomp__sub" (Standard__integer.range_check_(((Standard__integer__rep.to_rep(( #"sorting.adb" 49 0 0# abstract ensures {true}(let _ = Sorting__sort__t.t.Array__Int__Standard__integer.map__content in (
+              ()))
+              end ;
+             Sorting__sort__t.t__last ))) - Sorting__sort__l.l.int__content))) )) in (
+              (  assert {  (#"sorting.adb" 49 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:sorting.adb:49:52" "GP_Shape:L_2_while__pragargs__forall__cmp__ixdcomp__sub" "GP_Id:23" "comment:                                 T (I) <= T (T'Last-L)); 
+                                                   ^ sorting.adb:49:52:VC_INDEX_CHECK" ( ((Standard__integer__rep.to_rep Sorting__sort__t.t__first) <= temp___211) /\ (temp___211 <= (Standard__integer__rep.to_rep Sorting__sort__t.t__last)) ) )) };
+              temp___211 )))
+             ))))) in (
+              ()))
+              end ))))
+           ;
+            (any bool
+           requires { true} 
+           ensures { ( (result = True) <-> (forall i   "model" "name:I" "model_trace:2648"  : int.
+            ( ( ((Standard__integer__rep.to_rep Sorting__sort__t.t__first) <= i) /\ (i <= (((Standard__integer__rep.to_rep Sorting__sort__t.t__last) - Sorting__sort__l.l.int__content) - 1)) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Sorting__sort__t.t.Array__Int__Standard__integer.map__content i)) <= (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Sorting__sort__t.t.Array__Int__Standard__integer.map__content ((Standard__integer__rep.to_rep Sorting__sort__t.t__last) - Sorting__sort__l.l.int__content)))) )) )} 
+           ) ) in (
             ()))
             end ;
            () (* Loop statements appearing after the loop invariant of loop sorting.adb:40 *)
@@ -3751,13 +3882,13 @@ module Sorting__sort__subprogram_def
   with
    Return__exc -> ()
   end;
-   abstract ensures {true}(let _ = (#"sorting.ads" 9 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_PRECONDITION" "GP_Sloc:sorting.ads:9:16" "GP_Id:21" "comment:      Post => (Sorted (T, T'First, T'Last));
-               ^ sorting.ads:9:16:VC_PRECONDITION" "GP_Shape:pragargs__call_sorted" (Sorting__sorted___axiom.sorted((Sorting__nat_array.of_array(Sorting__sort__t.t.Array__Int__Standard__integer.map__content) ((Standard__integer__rep.to_rep(Sorting__sort__t.t__first))) ((Standard__integer__rep.to_rep(Sorting__sort__t.t__last))))) ((#"sorting.ads" 9 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_RANGE_CHECK" "GP_Sloc:sorting.ads:9:28" "GP_Id:19" "comment:      Post => (Sorted (T, T'First, T'Last));
-                           ^ sorting.ads:9:28:VC_RANGE_CHECK" "GP_Shape:pragargs__call_sorted__first_ref" (Standard__positive.range_check_((Standard__integer__rep.to_rep(( #"sorting.ads" 9 0 0# abstract ensures {true}(let _ = Sorting__sort__t.t.Array__Int__Standard__integer.map__content in (
+   abstract ensures {true}(let _ = (#"sorting.ads" 10 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_PRECONDITION" "GP_Sloc:sorting.ads:10:16" "GP_Id:27" "comment:      Post => (Sorted (T, T'First, T'Last));
+               ^ sorting.ads:10:16:VC_PRECONDITION" "GP_Shape:pragargs__call_sorted" (Sorting__sorted___axiom.sorted((Sorting__nat_array.of_array(Sorting__sort__t.t.Array__Int__Standard__integer.map__content) ((Standard__integer__rep.to_rep(Sorting__sort__t.t__first))) ((Standard__integer__rep.to_rep(Sorting__sort__t.t__last))))) ((#"sorting.ads" 10 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_RANGE_CHECK" "GP_Sloc:sorting.ads:10:28" "GP_Id:25" "comment:      Post => (Sorted (T, T'First, T'Last));
+                           ^ sorting.ads:10:28:VC_RANGE_CHECK" "GP_Shape:pragargs__call_sorted__first_ref" (Standard__positive.range_check_((Standard__integer__rep.to_rep(( #"sorting.ads" 10 0 0# abstract ensures {true}(let _ = Sorting__sort__t.t.Array__Int__Standard__integer.map__content in (
    ()))
    end ;
-  Sorting__sort__t.t__first ))))) ))) ((#"sorting.ads" 9 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_RANGE_CHECK" "GP_Sloc:sorting.ads:9:37" "GP_Id:20" "comment:      Post => (Sorted (T, T'First, T'Last));
-                                    ^ sorting.ads:9:37:VC_RANGE_CHECK" "GP_Shape:pragargs__call_sorted__last_ref" (Standard__positive.range_check_((Standard__integer__rep.to_rep(( #"sorting.ads" 9 0 0# abstract ensures {true}(let _ = Sorting__sort__t.t.Array__Int__Standard__integer.map__content in (
+  Sorting__sort__t.t__first ))))) ))) ((#"sorting.ads" 10 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_RANGE_CHECK" "GP_Sloc:sorting.ads:10:37" "GP_Id:26" "comment:      Post => (Sorted (T, T'First, T'Last));
+                                    ^ sorting.ads:10:37:VC_RANGE_CHECK" "GP_Shape:pragargs__call_sorted__last_ref" (Standard__positive.range_check_((Standard__integer__rep.to_rep(( #"sorting.ads" 10 0 0# abstract ensures {true}(let _ = Sorting__sort__t.t.Array__Int__Standard__integer.map__content in (
    ()))
    end ;
   Sorting__sort__t.t__last ))))) )))) )) in (
@@ -3765,7 +3896,7 @@ module Sorting__sort__subprogram_def
    end  )
 end
 
-(* Module for checking contracts and absence of run-time errors in subprogram "max" defined at sorting.ads:13, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
+(* Module for checking contracts and absence of run-time errors in subprogram "max" defined at sorting.ads:14, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
 module Sorting__max__subprogram_def
  use import "_gnatprove_standard".Main
  use import "int".Int
@@ -3809,71 +3940,65 @@ module Sorting__max__subprogram_def
  use        Sorting__max__j___axiom
  use        Sorting__max__L_1__T3b___axiom
 
- val sorting__max__result "model_projected" "model_trace:2779@result" "name:Max"  : int__ref 
+ val sorting__max__result "model_projected" "model_trace:2818@result" "name:Max"  : int__ref 
  
- let def #"sorting.ads" 13 0 0#"W:diverges:N" "GP_Subp:sorting.ads:13" 
+ let def #"sorting.ads" 14 0 0#"W:diverges:N" "GP_Subp:sorting.ads:14" 
    (__void_param : unit)
-  requires { #"sorting.ads" 13 0 0# true }
-  ensures { #"sorting.ads" 13 0 0# (#"sorting.ads" 20 0 0# ( "model_vc_post" "keep_on_simp" "GP_Reason:VC_POSTCONDITION" "GP_Sloc:sorting.ads:20:15" "GP_Id:30" "comment:      Post => (for all K in I .. J => T (Max'Result) >= T(K))
-              ^ sorting.ads:20:15:VC_POSTCONDITION" "GP_Shape:pragargs__and" ( ( (forall k #"sorting.ads" 20 0 0#  "model" "name:K" "model_trace:2851"  : int.
-   ( ( (Sorting__max__i.i <= k) /\ (k <= Sorting__max__j.j) ) -> ( "GP_Pretty_Ada:2868" "GP_Sloc:sorting.ads:20:39" ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Sorting__nat_array.to_array Sorting__max__t.t) sorting__max__result.int__content)) >= (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Sorting__nat_array.to_array Sorting__max__t.t) k))) ) )) /\ ( "GP_Pretty_Ada:2876" "GP_Sloc:sorting.ads:21:15" (sorting__max__result.int__content >= Sorting__max__i.i) ) ) /\ ( "GP_Pretty_Ada:2882" "GP_Sloc:sorting.ads:22:15" (sorting__max__result.int__content <= Sorting__max__j.j) ) ) )) }
+  requires { #"sorting.ads" 14 0 0# true }
+  ensures { #"sorting.ads" 14 0 0# (#"sorting.ads" 20 0 0# ( "model_vc_post" "keep_on_simp" "GP_Reason:VC_POSTCONDITION" "GP_Sloc:sorting.ads:20:15" "GP_Id:36" "comment:      Post => (for all K in I .. J => T (Max'Result) >= T(K))
+              ^ sorting.ads:20:15:VC_POSTCONDITION" "GP_Shape:pragargs__and" ( (forall k #"sorting.ads" 20 0 0#  "model" "name:K" "model_trace:2878"  : int.
+   ( ( (Sorting__max__i.i <= k) /\ (k <= Sorting__max__j.j) ) -> ( "GP_Pretty_Ada:2895" "GP_Sloc:sorting.ads:20:39" ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Sorting__nat_array.to_array Sorting__max__t.t) sorting__max__result.int__content)) >= (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Sorting__nat_array.to_array Sorting__max__t.t) k))) ) )) /\ ( "GP_Pretty_Ada:2903" "GP_Sloc:sorting.ads:21:15" ( (Sorting__max__i.i <= sorting__max__result.int__content) /\ (sorting__max__result.int__content <= Sorting__max__j.j) ) ) ) )) }
    =
-  ( () (* Assume dynamic invariants of inputs of the subprogram sorting.ads:13 *)
+  ( () (* Assume dynamic invariants of inputs of the subprogram sorting.ads:14 *)
   ;
    assume {  (Sorting__nat_array___axiom.dynamic_invariant Sorting__max__t.t True False True True) };
    assume {  (Standard__positive___axiom.dynamic_invariant Sorting__max__i.i True False True True) };
    assume {  (Standard__positive___axiom.dynamic_invariant Sorting__max__j.j True False True True) };
    assume {  true };
-  () (* Declarations introduced by the compiler at the beginning of the subprogram sorting.ads:13 *)
+  () (* Declarations introduced by the compiler at the beginning of the subprogram sorting.ads:14 *)
   ;
-  () (* Check for RTE in the Pre of the subprogram sorting.ads:13 *)
+  () (* Check for RTE in the Pre of the subprogram sorting.ads:14 *)
   ;
-   abstract ensures {true}(let _ = (Boolean.andb((Boolean.andb((Boolean.andb((Boolean.andb((Boolean.andb(((  abstract ensures {true}(let _ = Sorting__max__t.t in (
+   abstract ensures {true}(let _ = (Boolean.andb((Boolean.andb((Boolean.andb(((  abstract ensures {true}(let _ = Sorting__max__t.t in (
    ()))
    end ;
   (Sorting__nat_array.first(Sorting__max__t.t)) ) <= Sorting__max__i.i)) ((Sorting__max__i.i <= (  abstract ensures {true}(let _ = Sorting__max__t.t in (
    ()))
    end ;
-  (Sorting__nat_array.last(Sorting__max__t.t)) ))))) ((Sorting__max__i.i >= (  abstract ensures {true}(let _ = Sorting__max__t.t in (
-   ()))
-   end ;
-  (Sorting__nat_array.first(Sorting__max__t.t)) ))))) ((Boolean.andb(((  abstract ensures {true}(let _ = Sorting__max__t.t in (
+  (Sorting__nat_array.last(Sorting__max__t.t)) ))))) ((Boolean.andb(((  abstract ensures {true}(let _ = Sorting__max__t.t in (
    ()))
    end ;
   (Sorting__nat_array.first(Sorting__max__t.t)) ) <= Sorting__max__j.j)) ((Sorting__max__j.j <= (  abstract ensures {true}(let _ = Sorting__max__t.t in (
    ()))
    end ;
-  (Sorting__nat_array.last(Sorting__max__t.t)) ))))))) ((Sorting__max__j.j <= (  abstract ensures {true}(let _ = Sorting__max__t.t in (
+  (Sorting__nat_array.last(Sorting__max__t.t)) ))))))) (((Sorting__max__j.j - Sorting__max__i.i) >= 0))) in (
    ()))
    end ;
-  (Sorting__nat_array.last(Sorting__max__t.t)) ))))) (((Sorting__max__j.j - Sorting__max__i.i) >= 0))) in (
-   ()))
-   end ;
-  () (* Assume Pre of the subprogram sorting.ads:13 *)
+  () (* Assume Pre of the subprogram sorting.ads:14 *)
   ;
-   assume {  ( ( ( ( ( ((Sorting__nat_array.first Sorting__max__t.t) <= Sorting__max__i.i) /\ (Sorting__max__i.i <= (Sorting__nat_array.last Sorting__max__t.t)) ) /\ (Sorting__max__i.i >= (Sorting__nat_array.first Sorting__max__t.t)) ) /\ ( ((Sorting__nat_array.first Sorting__max__t.t) <= Sorting__max__j.j) /\ (Sorting__max__j.j <= (Sorting__nat_array.last Sorting__max__t.t)) ) ) /\ (Sorting__max__j.j <= (Sorting__nat_array.last Sorting__max__t.t)) ) /\ ((Sorting__max__j.j - Sorting__max__i.i) >= 0) ) };
+   assume {  ( ( ( ((Sorting__nat_array.first Sorting__max__t.t) <= Sorting__max__i.i) /\ (Sorting__max__i.i <= (Sorting__nat_array.last Sorting__max__t.t)) ) /\ ( ((Sorting__nat_array.first Sorting__max__t.t) <= Sorting__max__j.j) /\ (Sorting__max__j.j <= (Sorting__nat_array.last Sorting__max__t.t)) ) ) /\ ((Sorting__max__j.j - Sorting__max__i.i) >= 0) ) };
    try
    ( (#"sorting.adb" 13 0 0# ());
    (#"sorting.adb" 18 0 0# ( #"sorting.adb" 18 0 0# Sorting__max__tmp.tmp.int__content <- ( Sorting__max__j.j );
    #"sorting.adb" 18 0 0# assume { #"sorting.adb" 18 0 0# (Standard__positive___axiom.dynamic_invariant Sorting__max__tmp.tmp.int__content True False True True) } ));
    (#"sorting.adb" 20 0 0# ());
-   ( "GP_Sloc:sorting.adb:20:31" (#"sorting.adb" 20 0 0# (let temp___215 = Sorting__max__i.i in (
-   (let temp___216 = Sorting__max__j.j in (
-    ( #"sorting.adb" 20 0 0# Sorting__max__L_1__k.k.int__content <- ( temp___216 );
+   ( "GP_Sloc:sorting.adb:20:31" (#"sorting.adb" 20 0 0# (let temp___216 = Sorting__max__i.i in (
+   (let temp___217 = Sorting__max__j.j in (
+    ( #"sorting.adb" 20 0 0# Sorting__max__L_1__k.k.int__content <- ( temp___217 );
     () (* Translation of an Ada loop from sorting.adb:20 *)
     ;
-    (if ((Boolean.andb((temp___215 <= Sorting__max__L_1__k.k.int__content)) ((Sorting__max__L_1__k.k.int__content <= temp___216)))) then (
+    (if ((Boolean.andb((temp___216 <= Sorting__max__L_1__k.k.int__content)) ((Sorting__max__L_1__k.k.int__content <= temp___217)))) then (
      #"sorting.adb" 20 0 0# try
       ( #"sorting.adb" 20 0 0# abstract ensures {true}(let _ = Sorting__max__L_1__k.k.int__content in (
        ()))
        end ;
-      (let temp___218 = #"sorting.adb" 20 0 0# (any int
+      (let temp___219 = #"sorting.adb" 20 0 0# (any int
       ensures {#"sorting.adb" 20 0 0# (result = Sorting__max__L_1__k.k.int__content)} 
       ) in (
        ( #"sorting.adb" 20 0 0# abstract ensures {true}(let _ = Sorting__max__tmp.tmp.int__content in (
         ()))
         end ;
-       (let temp___217 = #"sorting.adb" 20 0 0# (any int
+       (let temp___218 = #"sorting.adb" 20 0 0# (any int
        ensures {#"sorting.adb" 20 0 0# (result = Sorting__max__tmp.tmp.int__content)} 
        ) in (
         ( () (* First unroling of the loop statements appearing before the loop invariant of loop sorting.adb:20 *)
@@ -3882,7 +4007,7 @@ module Sorting__max__subprogram_def
         ;
         #"sorting.adb" 20 0 0# while True do
          invariant { 
-          (#"sorting.adb" 24 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_LOOP_INVARIANT" "GP_Sloc:sorting.adb:24:15" "GP_Id:27" "comment:             ((for all L in K .. J => L=K or else T (Tmp) >= T(L)) and (Tmp in K .. J));
+          (#"sorting.adb" 24 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_LOOP_INVARIANT" "GP_Sloc:sorting.adb:24:15" "GP_Id:33" "comment:             ((for all L in K .. J => L=K or else T (Tmp) >= T(L)) and (Tmp in K .. J));
               ^ sorting.adb:24:15:VC_LOOP_INVARIANT" "GP_Shape:L_1_while__pragargs__and" ( (forall l #"sorting.adb" 24 0 0#  "model" "name:L" "model_trace:2437"  : int.
            ( ( (Sorting__max__L_1__k.k.int__content <= l) /\ (l <= Sorting__max__j.j) ) -> ( "GP_Pretty_Ada:2452" "GP_Sloc:sorting.adb:24:39" ( (l = Sorting__max__L_1__k.k.int__content) \/ ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Sorting__nat_array.to_array Sorting__max__t.t) Sorting__max__tmp.tmp.int__content)) >= (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Sorting__nat_array.to_array Sorting__max__t.t) l))) ) ) )) /\ ( "GP_Pretty_Ada:2462" "GP_Sloc:sorting.adb:24:72" ( (Sorting__max__L_1__k.k.int__content <= Sorting__max__tmp.tmp.int__content) /\ (Sorting__max__tmp.tmp.int__content <= Sorting__max__j.j) ) ) ) ))
           }
@@ -3895,9 +4020,9 @@ module Sorting__max__subprogram_def
           abstract ensures {true}(let _ = (Boolean.andb(( (let l =  (any int
          ) in (
           (if ((Boolean.andb((Sorting__max__L_1__k.k.int__content <= l)) ((l <= Sorting__max__j.j)))) then (
-            abstract ensures {true}(let _ = ( (l = Sorting__max__L_1__k.k.int__content) || ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Sorting__nat_array.to_array(Sorting__max__t.t))) ((  assert {  (#"sorting.adb" 24 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:sorting.adb:24:54" "GP_Id:25" "comment:             ((for all L in K .. J => L=K or else T (Tmp) >= T(L)) and (Tmp in K .. J));
+            abstract ensures {true}(let _ = ( (l = Sorting__max__L_1__k.k.int__content) || ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Sorting__nat_array.to_array(Sorting__max__t.t))) ((  assert {  (#"sorting.adb" 24 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:sorting.adb:24:54" "GP_Id:31" "comment:             ((for all L in K .. J => L=K or else T (Tmp) >= T(L)) and (Tmp in K .. J));
                                                      ^ sorting.adb:24:54:VC_INDEX_CHECK" "GP_Shape:L_1_while__pragargs__and__forall__orelse__cmp__ixdcomp" ( ((Sorting__nat_array.first Sorting__max__t.t) <= Sorting__max__tmp.tmp.int__content) /\ (Sorting__max__tmp.tmp.int__content <= (Sorting__nat_array.last Sorting__max__t.t)) ) )) };
-           Sorting__max__tmp.tmp.int__content ))))) >= (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Sorting__nat_array.to_array(Sorting__max__t.t))) ((  assert {  (#"sorting.adb" 24 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:L_1_while__pragargs__and__forall__orelse__cmp__ixdcomp" "GP_Sloc:sorting.adb:24:64" "GP_Id:26" "comment:             ((for all L in K .. J => L=K or else T (Tmp) >= T(L)) and (Tmp in K .. J));
+           Sorting__max__tmp.tmp.int__content ))))) >= (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Sorting__nat_array.to_array(Sorting__max__t.t))) ((  assert {  (#"sorting.adb" 24 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:L_1_while__pragargs__and__forall__orelse__cmp__ixdcomp" "GP_Sloc:sorting.adb:24:64" "GP_Id:32" "comment:             ((for all L in K .. J => L=K or else T (Tmp) >= T(L)) and (Tmp in K .. J));
                                                                ^ sorting.adb:24:64:VC_INDEX_CHECK" ( ((Sorting__nat_array.first Sorting__max__t.t) <= l) /\ (l <= (Sorting__nat_array.last Sorting__max__t.t)) ) )) };
            l )))))) ) in (
             ()))
@@ -3913,9 +4038,9 @@ module Sorting__max__subprogram_def
          () (* Loop statements appearing after the loop invariant of loop sorting.adb:20 *)
          ;
          ( "GP_Sloc:sorting.adb:26:24" (#"sorting.adb" 26 0 0# ()) );
-         ( "GP_Sloc:sorting.adb:26:10" (#"sorting.adb" 26 0 0# (if (((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Sorting__nat_array.to_array(Sorting__max__t.t))) (( #"sorting.adb" 26 0 0# assert { #"sorting.adb" 26 0 0# (#"sorting.adb" 26 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:sorting.adb:26:16" "GP_Id:23" "comment:         if T (K) > T (Tmp) then
+         ( "GP_Sloc:sorting.adb:26:10" (#"sorting.adb" 26 0 0# (if (((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Sorting__nat_array.to_array(Sorting__max__t.t))) (( #"sorting.adb" 26 0 0# assert { #"sorting.adb" 26 0 0# (#"sorting.adb" 26 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:sorting.adb:26:16" "GP_Id:29" "comment:         if T (K) > T (Tmp) then
                ^ sorting.adb:26:16:VC_INDEX_CHECK" "GP_Shape:L_1_while__if__cmp__ixdcomp" ( ((Sorting__nat_array.first Sorting__max__t.t) <= Sorting__max__L_1__k.k.int__content) /\ (Sorting__max__L_1__k.k.int__content <= (Sorting__nat_array.last Sorting__max__t.t)) ) )) };
-         Sorting__max__L_1__k.k.int__content ))))) > (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Sorting__nat_array.to_array(Sorting__max__t.t))) ((  assert {  (#"sorting.adb" 26 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:sorting.adb:26:24" "GP_Shape:L_1_while__if__cmp__ixdcomp" "GP_Id:24" "comment:         if T (K) > T (Tmp) then
+         Sorting__max__L_1__k.k.int__content ))))) > (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Sorting__nat_array.to_array(Sorting__max__t.t))) ((  assert {  (#"sorting.adb" 26 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:sorting.adb:26:24" "GP_Shape:L_1_while__if__cmp__ixdcomp" "GP_Id:30" "comment:         if T (K) > T (Tmp) then
                        ^ sorting.adb:26:24:VC_INDEX_CHECK" ( ((Sorting__nat_array.first Sorting__max__t.t) <= Sorting__max__tmp.tmp.int__content) /\ (Sorting__max__tmp.tmp.int__content <= (Sorting__nat_array.last Sorting__max__t.t)) ) )) };
          Sorting__max__tmp.tmp.int__content ))))))) then (
           ( ( "GP_Sloc:sorting.adb:27:13" (#"sorting.adb" 27 0 0# ()) );
@@ -3923,7 +4048,7 @@ module Sorting__max__subprogram_def
           ()))) );
          () (* Check for the exit condition and loop statements appearing before the loop invariant of loop sorting.adb:20 *)
          ;
-         (if ((Sorting__max__L_1__k.k.int__content = temp___215)) then (
+         (if ((Sorting__max__L_1__k.k.int__content = temp___216)) then (
            raise Sorting__max__L_1.L_1));
           Sorting__max__L_1__k.k.int__content <- ( (Sorting__max__L_1__k.k.int__content - 1) ) )
         done )))
@@ -3941,28 +4066,28 @@ module Sorting__max__subprogram_def
   with
    Return__exc -> ()
   end;
-   abstract ensures {true}(let _ = (Boolean.andb((Boolean.andb(( (let k =  (any int
+   abstract ensures {true}(let _ = (Boolean.andb(( (let k =  (any int
   ) in (
    (if ((Boolean.andb((Sorting__max__i.i <= k)) ((k <= Sorting__max__j.j)))) then (
-     abstract ensures {true}(let _ = ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Sorting__nat_array.to_array(Sorting__max__t.t))) ((  assert {  (#"sorting.ads" 20 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:sorting.ads:20:45" "GP_Id:28" "comment:      Post => (for all K in I .. J => T (Max'Result) >= T(K))
-                                            ^ sorting.ads:20:45:VC_INDEX_CHECK" "GP_Shape:pragargs__and__and__forall__cmp__ixdcomp__result_ref" ( ((Sorting__nat_array.first Sorting__max__t.t) <= sorting__max__result.int__content) /\ (sorting__max__result.int__content <= (Sorting__nat_array.last Sorting__max__t.t)) ) )) };
-    sorting__max__result.int__content ))))) >= (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Sorting__nat_array.to_array(Sorting__max__t.t))) ((  assert {  (#"sorting.ads" 20 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:sorting.ads:20:59" "GP_Id:29" "comment:      Post => (for all K in I .. J => T (Max'Result) >= T(K))
-                                                          ^ sorting.ads:20:59:VC_INDEX_CHECK" "GP_Shape:pragargs__and__and__forall__cmp__ixdcomp" ( ((Sorting__nat_array.first Sorting__max__t.t) <= k) /\ (k <= (Sorting__nat_array.last Sorting__max__t.t)) ) )) };
+     abstract ensures {true}(let _ = ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Sorting__nat_array.to_array(Sorting__max__t.t))) ((  assert {  (#"sorting.ads" 20 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:sorting.ads:20:45" "GP_Id:34" "comment:      Post => (for all K in I .. J => T (Max'Result) >= T(K))
+                                            ^ sorting.ads:20:45:VC_INDEX_CHECK" "GP_Shape:pragargs__and__forall__cmp__ixdcomp__result_ref" ( ((Sorting__nat_array.first Sorting__max__t.t) <= sorting__max__result.int__content) /\ (sorting__max__result.int__content <= (Sorting__nat_array.last Sorting__max__t.t)) ) )) };
+    sorting__max__result.int__content ))))) >= (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Sorting__nat_array.to_array(Sorting__max__t.t))) ((  assert {  (#"sorting.ads" 20 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:sorting.ads:20:59" "GP_Id:35" "comment:      Post => (for all K in I .. J => T (Max'Result) >= T(K))
+                                                          ^ sorting.ads:20:59:VC_INDEX_CHECK" "GP_Shape:pragargs__and__forall__cmp__ixdcomp" ( ((Sorting__nat_array.first Sorting__max__t.t) <= k) /\ (k <= (Sorting__nat_array.last Sorting__max__t.t)) ) )) };
     k )))))) in (
      ()))
      end ))))
   ;
    (any bool
   requires { true} 
-  ensures { ( (result = True) <-> (forall k   "model" "name:K" "model_trace:2851"  : int.
+  ensures { ( (result = True) <-> (forall k   "model" "name:K" "model_trace:2878"  : int.
    ( ( (Sorting__max__i.i <= k) /\ (k <= Sorting__max__j.j) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Sorting__nat_array.to_array Sorting__max__t.t) sorting__max__result.int__content)) >= (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Sorting__nat_array.to_array Sorting__max__t.t) k))) )) )} 
-  ) )) ((sorting__max__result.int__content >= Sorting__max__i.i)))) ((sorting__max__result.int__content <= Sorting__max__j.j))) in (
+  ) )) ((Boolean.andb((Sorting__max__i.i <= sorting__max__result.int__content)) ((sorting__max__result.int__content <= Sorting__max__j.j))))) in (
    ()))
    end ;
   sorting__max__result.int__content )
 end
 
-(* Module for checking contracts and absence of run-time errors in subprogram "swap" defined at sorting.ads:24, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
+(* Module for checking contracts and absence of run-time errors in subprogram "swap" defined at sorting.ads:23, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
 module Sorting__swap__subprogram_def
  use import "_gnatprove_standard".Main
  use import "int".Int
@@ -3989,20 +4114,20 @@ module Sorting__swap__subprogram_def
  use        Sorting__swap__i___axiom
  use        Sorting__swap__j___axiom
 
- let def #"sorting.ads" 24 0 0#"W:diverges:N" "GP_Subp:sorting.ads:24" 
+ let def #"sorting.ads" 23 0 0#"W:diverges:N" "GP_Subp:sorting.ads:23" 
    (__void_param : unit)
-  requires { #"sorting.ads" 24 0 0# true }
-  ensures { #"sorting.ads" 24 0 0# (#"sorting.ads" 29 0 0# ( "model_vc_post" "keep_on_simp" "GP_Reason:VC_POSTCONDITION" "GP_Sloc:sorting.ads:29:15" "GP_Id:41" "comment:      Post => (for all K in T'Range => 
-              ^ sorting.ads:29:15:VC_POSTCONDITION" "GP_Shape:pragargs__forall" (forall k #"sorting.ads" 29 0 0#  "model" "name:K" "model_trace:2936"  : int.
-   ( ( ((Standard__integer__rep.to_rep Sorting__swap__t.t__first) <= k) /\ (k <= (Standard__integer__rep.to_rep Sorting__swap__t.t__last)) ) -> ( "GP_Pretty_Ada:2973" "GP_Sloc:sorting.ads:30:10" ( ( ( (k = Sorting__swap__i.i) /\ ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Sorting__swap__t.t.Array__Int__Standard__integer.map__content k)) = (Standard__integer__rep.to_rep (let temp___223 = (old Sorting__swap__t.t.Array__Int__Standard__integer.map__content ) in (
-    (Array__Int__Standard__integer.get temp___223 Sorting__swap__j.j)))
-   )) ) \/ ( (k = Sorting__swap__j.j) /\ ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Sorting__swap__t.t.Array__Int__Standard__integer.map__content k)) = (Standard__integer__rep.to_rep (let temp___224 = (old Sorting__swap__t.t.Array__Int__Standard__integer.map__content ) in (
-    (Array__Int__Standard__integer.get temp___224 Sorting__swap__i.i)))
-   )) ) ) \/ ( ( (k <> Sorting__swap__i.i) /\ (k <> Sorting__swap__j.j) ) /\ ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Sorting__swap__t.t.Array__Int__Standard__integer.map__content k)) = (Standard__integer__rep.to_rep (let temp___225 = (old Sorting__swap__t.t.Array__Int__Standard__integer.map__content ) in (
-    (Array__Int__Standard__integer.get temp___225 k)))
+  requires { #"sorting.ads" 23 0 0# true }
+  ensures { #"sorting.ads" 23 0 0# (#"sorting.ads" 28 0 0# ( "model_vc_post" "keep_on_simp" "GP_Reason:VC_POSTCONDITION" "GP_Sloc:sorting.ads:28:15" "GP_Id:47" "comment:      Post => (for all K in T'Range => 
+              ^ sorting.ads:28:15:VC_POSTCONDITION" "GP_Shape:pragargs__forall" (forall k #"sorting.ads" 28 0 0#  "model" "name:K" "model_trace:2959"  : int.
+   ( ( ((Standard__integer__rep.to_rep Sorting__swap__t.t__first) <= k) /\ (k <= (Standard__integer__rep.to_rep Sorting__swap__t.t__last)) ) -> ( "GP_Pretty_Ada:2996" "GP_Sloc:sorting.ads:29:10" ( ( ( (k = Sorting__swap__i.i) /\ ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Sorting__swap__t.t.Array__Int__Standard__integer.map__content k)) = (Standard__integer__rep.to_rep (let temp___224 = (old Sorting__swap__t.t.Array__Int__Standard__integer.map__content ) in (
+    (Array__Int__Standard__integer.get temp___224 Sorting__swap__j.j)))
+   )) ) \/ ( (k = Sorting__swap__j.j) /\ ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Sorting__swap__t.t.Array__Int__Standard__integer.map__content k)) = (Standard__integer__rep.to_rep (let temp___225 = (old Sorting__swap__t.t.Array__Int__Standard__integer.map__content ) in (
+    (Array__Int__Standard__integer.get temp___225 Sorting__swap__i.i)))
+   )) ) ) \/ ( ( (k <> Sorting__swap__i.i) /\ (k <> Sorting__swap__j.j) ) /\ ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Sorting__swap__t.t.Array__Int__Standard__integer.map__content k)) = (Standard__integer__rep.to_rep (let temp___226 = (old Sorting__swap__t.t.Array__Int__Standard__integer.map__content ) in (
+    (Array__Int__Standard__integer.get temp___226 k)))
    )) ) ) ) )) )) }
    =
-  ( () (* Assume dynamic invariants of inputs of the subprogram sorting.ads:24 *)
+  ( () (* Assume dynamic invariants of inputs of the subprogram sorting.ads:23 *)
   ;
    assume {  (if (False) then (
    true) else (
@@ -4010,9 +4135,9 @@ module Sorting__swap__subprogram_def
    assume {  (Standard__positive___axiom.dynamic_invariant Sorting__swap__i.i True False True True) };
    assume {  (Standard__positive___axiom.dynamic_invariant Sorting__swap__j.j True False True True) };
    assume {  true };
-  () (* Declarations introduced by the compiler at the beginning of the subprogram sorting.ads:24 *)
+  () (* Declarations introduced by the compiler at the beginning of the subprogram sorting.ads:23 *)
   ;
-  () (* Check for RTE in the Pre of the subprogram sorting.ads:24 *)
+  () (* Check for RTE in the Pre of the subprogram sorting.ads:23 *)
   ;
    abstract ensures {true}(let _ = (Boolean.andb((Boolean.andb(((Standard__integer__rep.to_rep((  abstract ensures {true}(let _ = Sorting__swap__t.t.Array__Int__Standard__integer.map__content in (
    ()))
@@ -4029,40 +4154,40 @@ module Sorting__swap__subprogram_def
   Sorting__swap__t.t__last )))))))) in (
    ()))
    end ;
-  () (* Assume Pre of the subprogram sorting.ads:24 *)
+  () (* Assume Pre of the subprogram sorting.ads:23 *)
   ;
    assume {  ( ( ((Standard__integer__rep.to_rep Sorting__swap__t.t__first) <= Sorting__swap__i.i) /\ (Sorting__swap__i.i <= (Standard__integer__rep.to_rep Sorting__swap__t.t__last)) ) /\ ( ((Standard__integer__rep.to_rep Sorting__swap__t.t__first) <= Sorting__swap__j.j) /\ (Sorting__swap__j.j <= (Standard__integer__rep.to_rep Sorting__swap__t.t__last)) ) ) };
    abstract ensures {true}(let _ = Sorting__swap__t.t.Array__Int__Standard__integer.map__content in (
    ()))
    end ;
-  (let temp___old_220 =  (any Array__Int__Standard__integer.map
+  (let temp___old_222 =  (any Array__Int__Standard__integer.map
   ensures { (result = Sorting__swap__t.t.Array__Int__Standard__integer.map__content)} 
   ) in (
    (  abstract ensures {true}(let _ = Sorting__swap__t.t.Array__Int__Standard__integer.map__content in (
     ()))
     end ;
-   (let temp___old_219 =  (any Array__Int__Standard__integer.map
+   (let temp___old_221 =  (any Array__Int__Standard__integer.map
    ensures { (result = Sorting__swap__t.t.Array__Int__Standard__integer.map__content)} 
    ) in (
     (  abstract ensures {true}(let _ = Sorting__swap__t.t.Array__Int__Standard__integer.map__content in (
      ()))
      end ;
-    (let temp___old_221 =  (any Array__Int__Standard__integer.map
+    (let temp___old_220 =  (any Array__Int__Standard__integer.map
     ensures { (result = Sorting__swap__t.t.Array__Int__Standard__integer.map__content)} 
     ) in (
      (  try
       ( (#"sorting.adb" 3 0 0# ());
-      (#"sorting.adb" 7 0 0# ( #"sorting.adb" 7 0 0# Sorting__swap__tmp.tmp.int__content <- ( (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(Sorting__swap__t.t.Array__Int__Standard__integer.map__content) (( #"sorting.adb" 7 0 0# assert { #"sorting.adb" 7 0 0# (#"sorting.adb" 7 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:sorting.adb:7:27" "GP_Id:31" "comment:      Tmp : Integer := T (I);
+      (#"sorting.adb" 7 0 0# ( #"sorting.adb" 7 0 0# Sorting__swap__tmp.tmp.int__content <- ( (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(Sorting__swap__t.t.Array__Int__Standard__integer.map__content) (( #"sorting.adb" 7 0 0# assert { #"sorting.adb" 7 0 0# (#"sorting.adb" 7 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:sorting.adb:7:27" "GP_Id:37" "comment:      Tmp : Integer := T (I);
                           ^ sorting.adb:7:27:VC_INDEX_CHECK" "GP_Shape:tmp_decl__ixdcomp" ( ((Standard__integer__rep.to_rep Sorting__swap__t.t__first) <= Sorting__swap__i.i) /\ (Sorting__swap__i.i <= (Standard__integer__rep.to_rep Sorting__swap__t.t__last)) ) )) };
       Sorting__swap__i.i ))))) );
        assume {  (Standard__integer___axiom.dynamic_invariant Sorting__swap__tmp.tmp.int__content True False True True) } ));
-      ( "GP_Sloc:sorting.adb:9:12" (#"sorting.adb" 9 0 0# #"sorting.adb" 9 0 0# Sorting__swap__t.t.Array__Int__Standard__integer.map__content <- ( (Array__Int__Standard__integer.set(Sorting__swap__t.t.Array__Int__Standard__integer.map__content) (( #"sorting.adb" 9 0 0# assert { #"sorting.adb" 9 0 0# (#"sorting.adb" 9 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:t_assign__ixdcomp" "GP_Sloc:sorting.adb:9:9" "GP_Id:33" "comment:      T(I) := T(J);
+      ( "GP_Sloc:sorting.adb:9:12" (#"sorting.adb" 9 0 0# #"sorting.adb" 9 0 0# Sorting__swap__t.t.Array__Int__Standard__integer.map__content <- ( (Array__Int__Standard__integer.set(Sorting__swap__t.t.Array__Int__Standard__integer.map__content) (( #"sorting.adb" 9 0 0# assert { #"sorting.adb" 9 0 0# (#"sorting.adb" 9 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:t_assign__ixdcomp" "GP_Sloc:sorting.adb:9:9" "GP_Id:39" "comment:      T(I) := T(J);
         ^ sorting.adb:9:9:VC_INDEX_CHECK" ( ((Standard__integer__rep.to_rep Sorting__swap__t.t__first) <= Sorting__swap__i.i) /\ (Sorting__swap__i.i <= (Standard__integer__rep.to_rep Sorting__swap__t.t__last)) ) )) };
-      Sorting__swap__i.i )) ((Standard__integer__rep.of_rep((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(Sorting__swap__t.t.Array__Int__Standard__integer.map__content) ((  assert {  (#"sorting.adb" 9 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:sorting.adb:9:17" "GP_Id:32" "comment:      T(I) := T(J);
+      Sorting__swap__i.i )) ((Standard__integer__rep.of_rep((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(Sorting__swap__t.t.Array__Int__Standard__integer.map__content) ((  assert {  (#"sorting.adb" 9 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:sorting.adb:9:17" "GP_Id:38" "comment:      T(I) := T(J);
                 ^ sorting.adb:9:17:VC_INDEX_CHECK" "GP_Shape:t_assign__ixdcomp" ( ((Standard__integer__rep.to_rep Sorting__swap__t.t__first) <= Sorting__swap__j.j) /\ (Sorting__swap__j.j <= (Standard__integer__rep.to_rep Sorting__swap__t.t__last)) ) )) };
       Sorting__swap__j.j ))))))))) )) );
       ( "GP_Sloc:sorting.adb:10:15" (#"sorting.adb" 10 0 0# ()) );
-      ( "GP_Sloc:sorting.adb:10:12" (#"sorting.adb" 10 0 0# #"sorting.adb" 10 0 0# Sorting__swap__t.t.Array__Int__Standard__integer.map__content <- ( (Array__Int__Standard__integer.set(Sorting__swap__t.t.Array__Int__Standard__integer.map__content) (( #"sorting.adb" 10 0 0# assert { #"sorting.adb" 10 0 0# (#"sorting.adb" 10 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:t_assign__ixdcomp" "GP_Sloc:sorting.adb:10:9" "GP_Id:34" "comment:      T(J) := Tmp;
+      ( "GP_Sloc:sorting.adb:10:12" (#"sorting.adb" 10 0 0# #"sorting.adb" 10 0 0# Sorting__swap__t.t.Array__Int__Standard__integer.map__content <- ( (Array__Int__Standard__integer.set(Sorting__swap__t.t.Array__Int__Standard__integer.map__content) (( #"sorting.adb" 10 0 0# assert { #"sorting.adb" 10 0 0# (#"sorting.adb" 10 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:t_assign__ixdcomp" "GP_Sloc:sorting.adb:10:9" "GP_Id:40" "comment:      T(J) := Tmp;
         ^ sorting.adb:10:9:VC_INDEX_CHECK" ( ((Standard__integer__rep.to_rep Sorting__swap__t.t__first) <= Sorting__swap__j.j) /\ (Sorting__swap__j.j <= (Standard__integer__rep.to_rep Sorting__swap__t.t__last)) ) )) };
       Sorting__swap__j.j )) ((Standard__integer__rep.of_rep(Sorting__swap__tmp.tmp.int__content)))) )) );
        raise Return__exc )
@@ -4078,26 +4203,26 @@ module Sorting__swap__subprogram_def
        ()))
        end ;
       Sorting__swap__t.t__last ))))))) then (
-        abstract ensures {true}(let _ = (Boolean.orb((Boolean.orb((Boolean.andb((k = Sorting__swap__i.i)) (((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(Sorting__swap__t.t.Array__Int__Standard__integer.map__content) ((  assert {  (#"sorting.ads" 30 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:sorting.ads:30:24" "GP_Id:35" "comment:         (K = I and T (K) = T'Old (J)) or
-                       ^ sorting.ads:30:24:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__or__or__and__cmp__ixdcomp" ( ((Standard__integer__rep.to_rep Sorting__swap__t.t__first) <= k) /\ (k <= (Standard__integer__rep.to_rep Sorting__swap__t.t__last)) ) )) };
-       k ))))) = (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(temp___old_219) ((  assert {  (#"sorting.ads" 30 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__or__or__and__cmp__ixdcomp" "GP_Sloc:sorting.ads:30:36" "GP_Id:36" "comment:         (K = I and T (K) = T'Old (J)) or
-                                   ^ sorting.ads:30:36:VC_INDEX_CHECK" ( ((Standard__integer__rep.to_rep Sorting__swap__t.t__first) <= Sorting__swap__j.j) /\ (Sorting__swap__j.j <= (Standard__integer__rep.to_rep Sorting__swap__t.t__last)) ) )) };
-       Sorting__swap__j.j ))))))))) ((Boolean.andb((k = Sorting__swap__j.j)) (((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(Sorting__swap__t.t.Array__Int__Standard__integer.map__content) ((  assert {  (#"sorting.ads" 31 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__or__or__and__cmp__ixdcomp" "GP_Sloc:sorting.ads:31:24" "GP_Id:37" "comment:         (K = J and T (K) = T'Old (I)) or
-                       ^ sorting.ads:31:24:VC_INDEX_CHECK" ( ((Standard__integer__rep.to_rep Sorting__swap__t.t__first) <= k) /\ (k <= (Standard__integer__rep.to_rep Sorting__swap__t.t__last)) ) )) };
-       k ))))) = (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(temp___old_220) ((  assert {  (#"sorting.ads" 31 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__or__or__and__cmp__ixdcomp" "GP_Sloc:sorting.ads:31:36" "GP_Id:38" "comment:         (K = J and T (K) = T'Old (I)) or
-                                   ^ sorting.ads:31:36:VC_INDEX_CHECK" ( ((Standard__integer__rep.to_rep Sorting__swap__t.t__first) <= Sorting__swap__i.i) /\ (Sorting__swap__i.i <= (Standard__integer__rep.to_rep Sorting__swap__t.t__last)) ) )) };
-       Sorting__swap__i.i ))))))))))) ((Boolean.andb((Boolean.andb((k <> Sorting__swap__i.i)) ((k <> Sorting__swap__j.j)))) (((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(Sorting__swap__t.t.Array__Int__Standard__integer.map__content) ((  assert {  (#"sorting.ads" 32 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:sorting.ads:32:36" "GP_Id:39" "comment:         (K /= I and K /= J and T (K) = T'Old (K)));
-                                   ^ sorting.ads:32:36:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__or__and__cmp__ixdcomp" ( ((Standard__integer__rep.to_rep Sorting__swap__t.t__first) <= k) /\ (k <= (Standard__integer__rep.to_rep Sorting__swap__t.t__last)) ) )) };
-       k ))))) = (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(temp___old_221) ((  assert {  (#"sorting.ads" 32 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__or__and__cmp__ixdcomp" "GP_Sloc:sorting.ads:32:48" "GP_Id:40" "comment:         (K /= I and K /= J and T (K) = T'Old (K)));
-                                               ^ sorting.ads:32:48:VC_INDEX_CHECK" ( ((Standard__integer__rep.to_rep Sorting__swap__t.t__first) <= k) /\ (k <= (Standard__integer__rep.to_rep Sorting__swap__t.t__last)) ) )) };
+        abstract ensures {true}(let _ = (Boolean.orb((Boolean.orb((Boolean.andb((k = Sorting__swap__i.i)) (((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(Sorting__swap__t.t.Array__Int__Standard__integer.map__content) ((  assert {  (#"sorting.ads" 29 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:sorting.ads:29:24" "GP_Id:41" "comment:         (K = I and T (K) = T'Old (J)) or
+                       ^ sorting.ads:29:24:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__or__or__and__cmp__ixdcomp" ( ((Standard__integer__rep.to_rep Sorting__swap__t.t__first) <= k) /\ (k <= (Standard__integer__rep.to_rep Sorting__swap__t.t__last)) ) )) };
+       k ))))) = (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(temp___old_220) ((  assert {  (#"sorting.ads" 29 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__or__or__and__cmp__ixdcomp" "GP_Sloc:sorting.ads:29:36" "GP_Id:42" "comment:         (K = I and T (K) = T'Old (J)) or
+                                   ^ sorting.ads:29:36:VC_INDEX_CHECK" ( ((Standard__integer__rep.to_rep Sorting__swap__t.t__first) <= Sorting__swap__j.j) /\ (Sorting__swap__j.j <= (Standard__integer__rep.to_rep Sorting__swap__t.t__last)) ) )) };
+       Sorting__swap__j.j ))))))))) ((Boolean.andb((k = Sorting__swap__j.j)) (((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(Sorting__swap__t.t.Array__Int__Standard__integer.map__content) ((  assert {  (#"sorting.ads" 30 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__or__or__and__cmp__ixdcomp" "GP_Sloc:sorting.ads:30:24" "GP_Id:43" "comment:         (K = J and T (K) = T'Old (I)) or
+                       ^ sorting.ads:30:24:VC_INDEX_CHECK" ( ((Standard__integer__rep.to_rep Sorting__swap__t.t__first) <= k) /\ (k <= (Standard__integer__rep.to_rep Sorting__swap__t.t__last)) ) )) };
+       k ))))) = (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(temp___old_221) ((  assert {  (#"sorting.ads" 30 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__or__or__and__cmp__ixdcomp" "GP_Sloc:sorting.ads:30:36" "GP_Id:44" "comment:         (K = J and T (K) = T'Old (I)) or
+                                   ^ sorting.ads:30:36:VC_INDEX_CHECK" ( ((Standard__integer__rep.to_rep Sorting__swap__t.t__first) <= Sorting__swap__i.i) /\ (Sorting__swap__i.i <= (Standard__integer__rep.to_rep Sorting__swap__t.t__last)) ) )) };
+       Sorting__swap__i.i ))))))))))) ((Boolean.andb((Boolean.andb((k <> Sorting__swap__i.i)) ((k <> Sorting__swap__j.j)))) (((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(Sorting__swap__t.t.Array__Int__Standard__integer.map__content) ((  assert {  (#"sorting.ads" 31 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:sorting.ads:31:36" "GP_Id:45" "comment:         (K /= I and K /= J and T (K) = T'Old (K)));
+                                   ^ sorting.ads:31:36:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__or__and__cmp__ixdcomp" ( ((Standard__integer__rep.to_rep Sorting__swap__t.t__first) <= k) /\ (k <= (Standard__integer__rep.to_rep Sorting__swap__t.t__last)) ) )) };
+       k ))))) = (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(temp___old_222) ((  assert {  (#"sorting.ads" 31 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__or__and__cmp__ixdcomp" "GP_Sloc:sorting.ads:31:48" "GP_Id:46" "comment:         (K /= I and K /= J and T (K) = T'Old (K)));
+                                               ^ sorting.ads:31:48:VC_INDEX_CHECK" ( ((Standard__integer__rep.to_rep Sorting__swap__t.t__first) <= k) /\ (k <= (Standard__integer__rep.to_rep Sorting__swap__t.t__last)) ) )) };
        k )))))))))) in (
         ()))
         end ))))
      ;
       (any bool
      requires { true} 
-     ensures { ( (result = True) <-> (forall k   "model" "name:K" "model_trace:2936"  : int.
-      ( ( ((Standard__integer__rep.to_rep Sorting__swap__t.t__first) <= k) /\ (k <= (Standard__integer__rep.to_rep Sorting__swap__t.t__last)) ) -> ( ( ( (k = Sorting__swap__i.i) /\ ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Sorting__swap__t.t.Array__Int__Standard__integer.map__content k)) = (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get temp___old_219 Sorting__swap__j.j))) ) \/ ( (k = Sorting__swap__j.j) /\ ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Sorting__swap__t.t.Array__Int__Standard__integer.map__content k)) = (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get temp___old_220 Sorting__swap__i.i))) ) ) \/ ( ( (k <> Sorting__swap__i.i) /\ (k <> Sorting__swap__j.j) ) /\ ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Sorting__swap__t.t.Array__Int__Standard__integer.map__content k)) = (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get temp___old_221 k))) ) ) )) )} 
+     ensures { ( (result = True) <-> (forall k   "model" "name:K" "model_trace:2959"  : int.
+      ( ( ((Standard__integer__rep.to_rep Sorting__swap__t.t__first) <= k) /\ (k <= (Standard__integer__rep.to_rep Sorting__swap__t.t__last)) ) -> ( ( ( (k = Sorting__swap__i.i) /\ ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Sorting__swap__t.t.Array__Int__Standard__integer.map__content k)) = (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get temp___old_220 Sorting__swap__j.j))) ) \/ ( (k = Sorting__swap__j.j) /\ ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Sorting__swap__t.t.Array__Int__Standard__integer.map__content k)) = (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get temp___old_221 Sorting__swap__i.i))) ) ) \/ ( ( (k <> Sorting__swap__i.i) /\ (k <> Sorting__swap__j.j) ) /\ ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Sorting__swap__t.t.Array__Int__Standard__integer.map__content k)) = (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get temp___old_222 k))) ) ) )) )} 
      ) ) in (
       ()))
       end  )))

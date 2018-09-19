@@ -1,7 +1,7 @@
-20180919125306
+20180919133619
 -c
 -x
 ada
 -gnatA
 -gnatc
--gnates=/home/colin/Documents/practice_spark/sort/gnatprove/8299d7e1.tmp
+-gnates=/home/colin/Documents/practice_spark/sort/gnatprove/08491aa6.tmp

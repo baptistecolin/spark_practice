@@ -13,37 +13,36 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U sorting%b		sorting.adb		29c68731 OO PK
+U sorting%b		sorting.adb		6e8cb4d6 OO PK
 
-U sorting%s		sorting.ads		567fa795 OO PK
+U sorting%s		sorting.ads		1dae5239 OO PK
 
-D sorting.ads		20180919124445 567fa795 sorting%s
-D sorting.adb		20180919125302 7fb920a4 sorting%b
+D sorting.ads		20180919133036 1dae5239 sorting%s
+D sorting.adb		20180919133542 7322e6ef sorting%b
 D system.ads		20180525052301 4635ec04 system%s
 D /home/colin/Documents/practice_spark/sort/spark_mode.adc  20180918120842 00000000
 X 1 sorting.ads
-1K9*Sorting 33l5 33e12 2|1b14 51l5 51t12
-2A9*Nat_Array(integer)<integer> 4r25 8r31 14r12 25r19 2|4r19 14r12 33r25
+1K9*Sorting 32l5 32e12 2|1b14 53l5 53t12
+2A9*Nat_Array(integer)<integer> 4r25 8r31 15r12 24r19 2|4r19 14r12 33r25
 . 36r31
-4V13*Sorted{boolean} 4>21 4>36 4>38 9s16 2|33b13 47s33
+4V13*Sorted{boolean} 4>21 4>36 4>38 10s16 2|33b13 47s33
 4a21 T{2A9} 6r36 6r53 2|34r33 34r41
 4i36 I{positive} 6r21 6r31 2|34r21
 4i38 J{positive} 6r24 6r48 2|34r26
-8U14*Sort 8=20 2|36b14 49l8 49t12
-8a20 T{2A9} 9r24 9r27 9r36 2|36b20 40r16 41r17 43r28 43r31 43r40 44m16 44r19
-. 46r33 46r45 47r40 47r43 47r53
-13V13 Max{positive} 14>8 15>8 16>8 20r42 21r15 22r15 2|13b13 31l8 31t11 43s23
-14a8 T{2A9} 17r20 17r37 18r20 18r37 20r39 20r57 2|14b8 24r51 24r62 26r13
-. 26r21
-15i8 I{positive} 17r15 17r32 19r17 20r29 21r29 2|15b8 20r24
-16i8 J{positive} 18r15 18r32 19r15 20r34 22r29 2|16b8 18r25 20r29 24r34 24r85
+8U14*Sort 8=20 2|36b14 51l8 51t12
+8a20 T{2A9} 9r15 10r24 10r27 10r36 2|36b20 40r16 41r17 43r28 43r31 43r40
+. 44m16 44r19 46r41 47r40 47r43 47r53 48r46 48r57 49r34 49r43 49r46
+14V13 Max{positive} 15>8 16>8 17>8 20r42 21r15 2|13b13 31l8 31t11 43s23
+15a8 T{2A9} 18r20 18r37 20r39 20r57 2|14b8 24r51 24r62 26r13 26r21
+16i8 I{positive} 18r15 19r17 20r29 21r29 2|15b8 20r24
+17i8 J{positive} 18r32 19r15 20r34 21r34 2|16b8 18r25 20r29 24r34 24r85
 20i24 K{integer} 20r59
-24U14 Swap 25=8 26>8 27>8 2|3b14 11l9 11t13 44s10
-25a8 T{2A9} 28r20 28r37 29r29 30r21 30r29 31r21 31r29 32r33 32r41 2|4b8 7r24
+23U14 Swap 24=8 25>8 26>8 2|3b14 11l9 11t13 44s10
+24a8 T{2A9} 27r20 27r37 28r29 29r21 29r29 30r21 30r29 31r33 31r41 2|4b8 7r24
 . 9m7 9r15 10m7
-26i8 I{positive} 28r15 30r15 31r36 32r16 2|5b8 7r27 9r9
-27i8 J{positive} 28r32 30r36 31r15 32r27 2|6b8 9r17 10r9
-29i24 K{integer} 30r11 30r24 31r11 31r24 32r11 32r22 32r36 32r48
+25i8 I{positive} 27r15 29r15 30r36 31r16 2|5b8 7r27 9r9
+26i8 J{positive} 27r32 29r36 30r15 31r27 2|6b8 9r17 10r9
+28i24 K{integer} 29r11 29r24 30r11 30r24 31r11 31r22 31r36 31r48
 X 2 sorting.adb
 7i7 Tmp{integer} 10r15
 18i7 Tmp{positive} 24r54 24r73 26r24 27m13 30r14
@@ -51,8 +50,9 @@ X 2 sorting.adb
 24i24 L{integer} 24r39 24r64
 34i16 K{integer} 34r35 34r43
 37i7 Local_Max{positive} 43m10 44r29
-38i7 L{natural} 41m10 43r47 44r26 46r40 47r50
-40i11 K{integer} 41r15
+38i7 L{natural} 41m10 43r47 44r26 46r33 47r50 48r64 49r53
+40i11 K{integer} 41r15 46r37
+48i41 I{integer} 49r37
 
 QQ SPARKVERSION 2018 (20180524)
 GG EK_DIRECT_CALLS sorting__sorted 0

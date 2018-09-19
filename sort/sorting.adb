@@ -42,9 +42,11 @@ package body Sorting is
 
          Local_Max := Max (T, T'First, T'Last-L);
          Swap (T, T'Last-L, Local_Max);
-         
-         pragma Loop_Invariant (T'Last-L in T'Range);
+
+         pragma Loop_Invariant (L = K - T'First);
          pragma Loop_Invariant (Sorted(T, T'Last-L, T'Last));
+         pragma Loop_Invariant (for all I in T'First .. T'Last-L - 1 =>
+                                 T (I) <= T (T'Last-L)); 
       end loop;
    end Sort;
 

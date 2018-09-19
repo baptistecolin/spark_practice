@@ -6,6 +6,7 @@ package Sorting is
          Pre => (if I<=J then I in T'Range and J in T'Range);
 
    procedure Sort (T : in out Nat_Array) with
+      Pre  => T'Length > 0,
       Post => (Sorted (T, T'First, T'Last));
 
 private
@@ -14,12 +15,10 @@ private
       (T : Nat_Array;
        I : Positive;
        J : Positive) return Positive with 
-      Pre  => I in T'Range and I >= T'First
-          and J in T'Range and J <= T'Last 
+      Pre  => I in T'Range and J in T'Range 
           and J-I >= 0,
       Post => (for all K in I .. J => T (Max'Result) >= T(K))
-          and Max'Result >= I
-          and Max'Result <= J;
+          and Max'Result in I .. J;
 
    procedure Swap 
       (T : in out Nat_Array;

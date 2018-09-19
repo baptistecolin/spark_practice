@@ -31,19 +31,20 @@ package body Sorting is
    end Max;
   
    function Sorted (T : Nat_Array; I, J : Positive) return Boolean is
-      (for all K in I .. J-1 => T(K) <= T(K+1))
-   with Ghost,
-      Pre => J > Integer'First
-         and then (if I<=J then I in T'Range and J in T'Range);
+      (for all K in I .. J-1 => T(K) <= T(K+1));
 
    procedure Sort (T : in out Nat_Array) is
       Local_Max : Positive;
+      L : Natural;
    begin
-      for K in 0 .. T'Length-1 loop
-         Local_Max := Max (T, T'First, T'Last-K);
-         Swap (T, T'Last-K, Local_Max);
+      for K in T'Range loop
+         L := K-T'First;
 
-         pragma Loop_Invariant (Sorted(T, T'Last-K, T'Last));
+         Local_Max := Max (T, T'First, T'Last-L);
+         Swap (T, T'Last-L, Local_Max);
+         
+         pragma Loop_Invariant (T'Last-L in T'Range);
+         pragma Loop_Invariant (Sorted(T, T'Last-L, T'Last));
       end loop;
    end Sort;
 

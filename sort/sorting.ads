@@ -1,8 +1,12 @@
 package Sorting is
    type Nat_Array is array (Positive range <>) of Integer;
+   
+   function Sorted (T : Nat_Array; I,J : Positive) return Boolean
+      with Ghost,
+         Pre => (if I<=J then I in T'Range and J in T'Range);
 
    procedure Sort (T : in out Nat_Array) with
-      Post => (for all I in T'Range => I = T'Last or else T (I) <= T (I+1));
+      Post => (Sorted (T, T'First, T'Last));
 
 private
 
